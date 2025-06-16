@@ -1,6 +1,8 @@
 # Defra AI Legacy Modernisation Playbook
 This is a repository for the Defra AI Legacy Modernisation Playbook, which provides guidance on how to modernise legacy systems using AI technologies.
 
+[![Page Deploy](https://github.com/DEFRA/defra-ai-legacy-modernisation/actions/workflows/deploy.yml/badge.svg?event=deployment_status)](https://github.com/DEFRA/defra-ai-legacy-modernisation/actions/workflows/deploy.yml)
+
 ## Viewing the Playbook
 
 The guide is best viewed in GitHub pages at [https://defra.github.io/defra-ai-legacy-modernisation/](https://defra.github.io/defra-ai-legacy-modernisation/).
@@ -26,7 +28,7 @@ git clone https://github.com/DEFRA/defra-ai-legacy-modernisation
 
 Navigate to the repository directory:
 ```bash
-cd defra-ai-legacy-modernisation
+cd defra-ai-legacy-modernisation/playbook
 ```
 
 Install the required gems:
@@ -36,12 +38,12 @@ bundle install
 
 Build the site:
 ```bash
-bundle exec jekyll build --config ./defra-ai-legacy-modernisation/_config.yml
+bundle exec jekyll build
 ```
 
 Serve the site locally to preview changes:
 ```bash
-bundle exec jekyll serve --config ./defra-ai-legacy-modernisation/_config.yml
+bundle exec jekyll serve
 ```
 
 Open your web browser and navigate to `http://localhost:4000/defra-ai-legacy-modernisation/playbook` to view the playbook.
