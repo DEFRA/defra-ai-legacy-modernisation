@@ -8,8 +8,4 @@ This playbook provides guidance on how to modernise legacy systems using AI tech
 
 ## Overview
 
-Defra manages environmental protection, food production and rural development across the UK. The department works through multiple sub-departments and arms-length bodies all of which have legacy systems that need modernisation. This playbook provides a framework for modernising these systems using AI technologies.
-
-## Contributing
-
-We welcome contributions from the Defra community. See the [CONTRIBUTING](pages/appendix/CONTRIBUTING.md) file for how to contribute to this playbook.
+Defra manages environmental protection, food production and rural development across the UK. The department works through multiple sub-departments and arms-length bodies all of which have legacy systems that can benefit from modernisation.

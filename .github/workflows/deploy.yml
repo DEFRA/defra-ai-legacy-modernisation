@@ -24,7 +24,7 @@ jobs:
     - name: Build site
       working-directory: ./playbook
       run: |
-        bundle exec jekyll build --config ./_config.yml
+        bundle exec jekyll build
 
     - name: Upload artifacts
       # if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
