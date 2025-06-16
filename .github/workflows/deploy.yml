@@ -30,6 +30,7 @@ jobs:
       # if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
       uses: actions/upload-artifact@v4
       with:
+        name: defra-ai-legacy-modernisation-playbook
         path: ./playbook/_site
 
   deploy:
@@ -49,3 +50,5 @@ jobs:
     steps:
     - uses: actions/deploy-pages@v4
       id: deployment
+      with:
+        artifact_name: defra-ai-legacy-modernisation-playbook
