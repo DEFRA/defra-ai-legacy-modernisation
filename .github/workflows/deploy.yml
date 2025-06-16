@@ -18,6 +18,7 @@ jobs:
         bundler-cache: true
 
     - name: Install dependencies
+      working-directory: ./playbook
       run: |
         bundle install
 
