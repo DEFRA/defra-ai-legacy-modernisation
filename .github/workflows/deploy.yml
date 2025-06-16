@@ -24,7 +24,7 @@ jobs:
     - name: Build site
       working-directory: ./defra-ai-legacy-modernisation
       run: |
-        bundle exec jekyll build --config ./defra-ai-legacy-modernisation/_config.yml
+        bundle exec jekyll build --config ./_config.yml
 
     - name: Upload artifacts
       if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
