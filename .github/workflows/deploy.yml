@@ -1,0 +1,51 @@
+name: Page Deploy
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.3'
+        bundler-cache: true
+
+    - name: Install dependencies
+      run: |
+        bundle install
+
+    - name: Build site
+      working-directory: ./playbook
+      run: |
+        bundle exec jekyll build --config ./_config.yml
+
+    - name: Upload artifacts
+      if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+      uses: actions/upload-artifact@v4
+      with:
+        name: ./playbook/_site
+
+  deploy:
+    needs: build
+
+    if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.output.page_url }}
+
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/deploy-pages@v4
+      id: deployment
