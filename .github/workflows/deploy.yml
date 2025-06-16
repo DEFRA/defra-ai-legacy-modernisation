@@ -22,7 +22,7 @@ jobs:
         bundle install
 
     - name: Build site
-      working-directory: ./defra-ai-legacy-modernisation
+      working-directory: ./playbook
       run: |
         bundle exec jekyll build --config ./_config.yml
 
@@ -30,7 +30,7 @@ jobs:
       if: github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch'
       uses: actions/upload-artifact@v4
       with:
-        name: ./defra-ai-legacy-modernisation/_site
+        name: ./playbook/_site
 
   deploy:
     needs: build

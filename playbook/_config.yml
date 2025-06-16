@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 title: Defra AI Legacy Modernisation Playbook
 description: This playbook provides guidance on how to modernise legacy systems using AI technologies.
-baseurl: '/defra-ai-legacy-modernisation/'
+baseurl: '/defra-ai-legacy-modernisation'
 logo: ./assets/images/defra-logo.svg
 version: 1.0.0
 css_version: 1.0.0
@@ -31,7 +31,7 @@ include:
 exclude:
   - README.md
   - _site/
-  - defra-ai-legacy-modernisation/_site/
+  - playbook/_site/
   - Gemfile
   - Gemfile.lock
   - node_modules/
