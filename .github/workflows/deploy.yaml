@@ -22,7 +22,7 @@ jobs:
         bundle install
 
     - name: Build site
-      working_directory: ./defra-ai-legacy-modernisation
+      working-directory: ./defra-ai-legacy-modernisation
       run: |
         bundle exec jekyll build --config ./defra-ai-legacy-modernisation/_config.yml
 
