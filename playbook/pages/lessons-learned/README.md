@@ -1,5 +1,5 @@
 
-# Lessons Learnt
+# Lessons Learned
 
 This document captures key lessons learned during the DEFRA AI Legacy Modernisation project to help future teams avoid common pitfalls and adopt best practices.
 
