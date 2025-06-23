@@ -43,7 +43,7 @@ This document captures key lessons learnt during the DEFRA AI Legacy Modernisati
 **Solution**: We used Copilot to truncate the synthetic data to fit within the original schema constraints.
 
 **Best Practice**: For future projects, the ideal solution would be to use shorter prefixes such as 'F_John Smith' instead of 'Fake John Smith', which would minimise character length impact whilst still clearly indicating synthetic data. Consider either:
-- Using minimal prefixes (F_, X_, TEST_)
+- Using minimal prefixes (F_, or  X_)
 - Increasing column lengths in test environments
 - Adding separate boolean flags to indicate synthetic data
 
