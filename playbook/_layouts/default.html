@@ -130,27 +130,27 @@
           <nav class="site-nav">
               <h2>Navigation</h2>
               <ul>
-                  <li><a href="/defra-ai-legacy-modernisation">1. Welcome</a></li>
-                  <li><strong>2. Getting Started</strong>
-                      <ul>
-                          <li><a href="/defra-ai-legacy-modernisation/pages/getting-started/ai-working-mindset">AI Working Mindset</a></li>
-                          <li><a href="/defra-ai-legacy-modernisation/pages/getting-started/project-setup">Project Setup</a></li>
-                      </ul>
+                  <li><a href="/defra-ai-legacy-modernisation/">1. Welcome</a></li>
+                  <li>
+                    <strong>2. Getting Started</strong>
+                    <ul>
+                        <li><a href="/defra-ai-legacy-modernisation/pages/getting-started/ai-working-mindset">AI Working Mindset</a></li>
+                        <li><a href="/defra-ai-legacy-modernisation/pages/getting-started/project-setup">Project Setup</a></li>
+                    </ul>
                   </li>
-                  <li><strong>3. Feature Development</strong>
-                      <ul>
-                          <li><em>Coming Soon</em></li>
-                      </ul>
+                  <li>
+                    <strong>3. Pathways</strong>
+                    <ul>
+                      <li><a href="/defra-ai-legacy-modernisation/pages/pathways/ms-access/">MS Access</a></li>
+                      <li><a href="/defra-ai-legacy-modernisation/pages/pathways/sql-server/">SQL Server</a></li>
+                    </ul>
                   </li>
-                  <li><strong>4. Lessons Learnt</strong>
-                      <ul>
-                          <li><a href="/defra-ai-legacy-modernisation/pages/lessons-learnt/lessons-learnt">Lessons Learnt</a></li>
-                      </ul>
-                  </li>
-                  <li><strong>5. Appendix</strong>
-                      <ul>
-                          <li><em>Coming Soon</em></li>
-                      </ul>
+                  <li><a href="/defra-ai-legacy-modernisation/pages/lessons-learned/">4. Lessons Learned</a></li>
+                  <li>
+                    <strong>5. Appendix</strong>
+                    <ul>
+                      <li><a href="/defra-ai-legacy-modernisation/pages/appendix/prompt-library/">Prompt Library</a></li>
+                    </ul>
                   </li>
               </ul>
           </nav>
@@ -282,12 +282,23 @@
       });
     </script>
 
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+
     <script>
       document.addEventListener('DOMContentLoaded', (event) => {
         // Find all pre elements (common container for code blocks)
         const codeBlocks = document.querySelectorAll('pre');
 
         codeBlocks.forEach(codeBlock => {
+          if (codeBlock.className.includes('mermaid')) {
+            // Skip Mermaid diagrams
+            return;
+          }
+
           // Create the copy button
           const copyButton = document.createElement('button');
           copyButton.className = 'copy-code-button';

@@ -1,16 +1,11 @@
 
-# Lessons Learnt
+# Lessons Learned
 
 This document captures key lessons learnt during the DEFRA AI Legacy Modernisation project to help future teams avoid common pitfalls and adopt best practices.
 
 ## Working with AI Tools
 
 ### 1. Issue with Documentation of Legacy Application
-This document captures key lessons learned during the DEFRA AI Legacy Modernisation project to help future teams avoid common pitfalls and adopt best practices.
-
-## Working with AI Tools
-
-### GitHub Copilot and Visual References
 
 **Issue**: GitHub Copilot had difficulty interpreting PowerPoint presentations (.pptx files) when used as reference material for implementing UI components and pages.
 
@@ -48,18 +43,12 @@ This document captures key lessons learned during the DEFRA AI Legacy Modernisat
 **Solution**: We used Copilot to truncate the synthetic data to fit within the original schema constraints.
 
 **Best Practice**: For future projects, the ideal solution would be to use shorter prefixes such as 'F_John Smith' instead of 'Fake John Smith', which would minimise character length impact whilst still clearly indicating synthetic data. Consider either:
-- Using minimal prefixes (F_, or  X_)
+- Using minimal prefixes (F_, X_, TEST_)
 - Increasing column lengths in test environments
 - Adding separate boolean flags to indicate synthetic data
 
 ## Future Considerations
 
 - Document other lessons learnt as the project progresses
-- Share insights with the broader team
-- Update this document regularly to capture new discoveries
-
-## Future Considerations
-
-- Document other lessons learned as the project progresses
 - Share insights with the broader team
 - Update this document regularly to capture new discoveries
