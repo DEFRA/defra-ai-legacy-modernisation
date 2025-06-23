@@ -282,12 +282,23 @@
       });
     </script>
 
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+
     <script>
       document.addEventListener('DOMContentLoaded', (event) => {
         // Find all pre elements (common container for code blocks)
         const codeBlocks = document.querySelectorAll('pre');
 
         codeBlocks.forEach(codeBlock => {
+          if (codeBlock.className.includes('mermaid')) {
+            // Skip Mermaid diagrams
+            return;
+          }
+
           // Create the copy button
           const copyButton = document.createElement('button');
           copyButton.className = 'copy-code-button';

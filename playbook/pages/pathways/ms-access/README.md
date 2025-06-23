@@ -9,14 +9,14 @@ Microsoft Access applications typically consist of two main components that requ
 1. **Frontend Components**: Forms, reports, and user interfaces
 2. **Backend Components**: Database schema, data, and business logic
 
-```mermaid
+<pre class="mermaid">
 graph TD
     A[MS Access] -->|Frontend| B[Document Forms]
-    B --> C[Document Forms]
+    B --> C[Modern UI Implementation]
     A -->|Database| D[SQL Server Migration Assistant SSMA]
     D --> E[Refactor Generated SQL]
-    F --> G[Follow SQL Server Pathway]
-```
+    E --> F[Follow SQL Server Pathway]
+</pre>
 
 Both sub-paths (frontend and database) have been broken down into detailed guides which can be followed independently or in parallel, depending on the complexity of the Access application.
 
