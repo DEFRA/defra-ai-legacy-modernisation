@@ -86,3 +86,40 @@ This document captures key lessons learnt during the DEFRA AI Legacy Modernisati
 **Impact**: This significantly accelerated development velocity whilst ensuring consistent code quality and compliance with all required standards across both frontend and backend components. 
 
 
+### 6. Output Format Modernisation Strategy
+
+**Issue**: The legacy TB-CMS application exported outputs exclusively to Microsoft Word documents, creating vendor dependency and limiting formatting flexibility.
+
+**Root Cause**: The original system was built around Microsoft services integration, resulting in tight coupling to proprietary document formats.
+
+**Solution**: The modernised application is node based and  produces reports in multiple formats rather than being constrained to a single proprietary format, enabling greater flexibility and reducing vendor lock-in.
+
+**Best Practice**: For legacy modernisation projects:
+- Decouple output generation from specific vendor formats
+- Implement format-agnostic reporting engines
+- Support multiple export formats (PDF, HTML, CSV, etc.)
+- Consider user preferences and accessibility requirements
+
+**Impact**: This approach provides greater flexibility in output formatting, reduces dependency on Microsoft services, and enables future format extensibility without system redesign. 
+
+
+### 7. Database Migration Strategy -WIP
+
+**Issue**: The legacy TB-CMS used Microsoft Access database, which is incompatible with modern development standards and cloud deployment requirements.
+
+**Root Cause**: Microsoft Access is a desktop database system that lacks scalability, cloud compatibility, and modern development tooling support required for contemporary applications.
+
+**Solution**: We migrated from Access to MongoDB using a structured approach:
+- Exported the original Access database schema
+- Converted the schema to Liquibase format for database-agnostic deployment
+- Used Copilot to generate synthetic test data matching the original structure
+- Validated the migration with comprehensive testing
+
+**Best Practice**: For database modernisation projects:
+- Use schema migration tools (Liquibase, Flyway) for database-agnostic deployments
+- Generate comprehensive synthetic data for testing
+- Maintain data structure integrity during migration
+- Consider NoSQL alternatives when appropriate for scalability
+- Implement thorough validation processes
+
+**Impact**: This migration enables cloud deployment, improved scalability, and alignment with modern development standards whilst maintaining data structure integrity.
