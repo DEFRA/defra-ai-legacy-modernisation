@@ -1,7 +1,7 @@
 # Defra AI Legacy Modernisation Playbook
 Version 1.0.0
 
-This playbook provides guidance on how to modernise legacy systems using AI technologies. It is designed for internal use within Defra and is updated regularly with new practices and lessons learned.
+This playbook provides guidance on how to modernise legacy systems using AI technologies. It is designed for internal use within Defra and is updated regularly with new practices and lessons learnt.
 
 ## Table of Contents
 1. [Welcome](README.md)
@@ -9,7 +9,7 @@ This playbook provides guidance on how to modernise legacy systems using AI tech
 3. Pathways
     - [MS Access Pathway](./pages/pathways/ms-access/)
     - [SQL Server Pathway](./pages/pathways/sql-server/)
-4. [Lessons Learned](./pages/lessons-learned/)
+4. [Lessons Learnt](./pages/lessons-learnt/)
 5. Appendix
    - [Prompt Library](appendix/prompt-library/)
 

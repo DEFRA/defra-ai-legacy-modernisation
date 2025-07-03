@@ -6,7 +6,7 @@ This document captures key lessons learnt during the DEFRA AI Legacy Modernisati
 ## Working with AI Tools
 
 ### 1. Issue with Documentation of Legacy Application
-This document captures key lessons learned during the DEFRA AI Legacy Modernisation project to help future teams avoid common pitfalls and adopt best practices.
+This document captures key lessons learnt during the DEFRA AI Legacy Modernisation project to help future teams avoid common pitfalls and adopt best practices.
 
 ## Working with AI Tools
 
@@ -108,7 +108,7 @@ This document captures key lessons learned during the DEFRA AI Legacy Modernisat
 **Impact**: This approach provides greater flexibility in output formatting, reduces dependency on Microsoft services, and enables future format extensibility without system redesign. 
 
 
-### 7. Database Migration Strategy -WIP
+### 7. Database Migration Strategy - WIP
 
 **Issue**: The legacy TB-CMS used Microsoft Access database, which is incompatible with modern development standards and cloud deployment requirements.
 
@@ -128,7 +128,7 @@ This document captures key lessons learned during the DEFRA AI Legacy Modernisat
 - Implement thorough validation processes
 
 **Impact**: This migration enables cloud deployment, improved scalability, and alignment with modern development standards whilst maintaining data structure integrity.
-=======
+
 ## Future Considerations
 
 - Document other lessons learnt as the project progresses
@@ -137,6 +137,6 @@ This document captures key lessons learned during the DEFRA AI Legacy Modernisat
 
 ## Future Considerations
 
-- Document other lessons learned as the project progresses
+- Document other lessons learnt as the project progresses
 - Share insights with the broader team
 - Update this document regularly to capture new discoveries
