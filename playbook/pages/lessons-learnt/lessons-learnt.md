@@ -6,6 +6,11 @@ This document captures key lessons learnt during the DEFRA AI Legacy Modernisati
 ## Working with AI Tools
 
 ### 1. Issue with Documentation of Legacy Application
+This document captures key lessons learned during the DEFRA AI Legacy Modernisation project to help future teams avoid common pitfalls and adopt best practices.
+
+## Working with AI Tools
+
+### GitHub Copilot and Visual References
 
 **Issue**: GitHub Copilot had difficulty interpreting PowerPoint presentations (.pptx files) when used as reference material for implementing UI components and pages.
 
@@ -123,3 +128,15 @@ This document captures key lessons learnt during the DEFRA AI Legacy Modernisati
 - Implement thorough validation processes
 
 **Impact**: This migration enables cloud deployment, improved scalability, and alignment with modern development standards whilst maintaining data structure integrity.
+=======
+## Future Considerations
+
+- Document other lessons learnt as the project progresses
+- Share insights with the broader team
+- Update this document regularly to capture new discoveries
+
+## Future Considerations
+
+- Document other lessons learned as the project progresses
+- Share insights with the broader team
+- Update this document regularly to capture new discoveries
