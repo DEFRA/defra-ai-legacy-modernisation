@@ -13,7 +13,7 @@ These pillars are essential for ensuring that AI can assist in generating high-q
 ### 1. Domain Knowledge
 **Purpose**: Understanding the business logic, requirements, and constraints of the legacy system is crucial for AI tools to generate contextually relevant code and migration strategies. If you don't know what the system does, AI can't help effectively.
 
-**Where to start**: Ensure you or someone on your team understands the system's users, workflows, and interactions. SMEs (Subject Matter Experts) can provide valuable insights into requirements and constraints.
+**Where to start**: Ensure you or someone on your team understands the system's users, business processes, and interactions. SMEs (Subject Matter Experts) can provide valuable insights into requirements and constraints.
 
 ### 2. Effective System Documentation
 **Purpose**: Clear technical documentation of the system's architecture, data structures, and workflows enables AI tools to generate accurate code and migration paths.

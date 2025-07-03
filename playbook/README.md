@@ -6,13 +6,18 @@ This playbook provides guidance on how to modernise legacy systems using AI tech
 ## Table of Contents
 1. [Welcome](README.md)
 2. [Responsible Practices](./pages/responsible-practices/)
+   - [Ethics](./pages/responsible-practices/ethics.md)
+   - [Sustainability](./pages/responsible-practices/sustainability.md)
 3. Getting Started
+   - [Four Pillars](./pages/getting-started/four-pillars.md)
+   - [AI Working Mindset](./pages/getting-started/ai-working-mindset.md)
+   - [Project Setup](./pages/getting-started/project-setup.md)
 4. Pathways
-    - [MS Access Pathway](./pages/pathways/ms-access/)
-    - [SQL Server Pathway](./pages/pathways/sql-server/)
+   - [MS Access Pathway](./pages/pathways/ms-access/)
+   - [SQL Server Pathway](./pages/pathways/sql-server/)
 5. [Lessons Learnt](./pages/lessons-learnt/)
 6. Appendix
-   - [Prompt Library](appendix/prompt-library/)
+   - [Prompt Library](./pages/appendix/prompt-library/)
 
 ## Overview
 
