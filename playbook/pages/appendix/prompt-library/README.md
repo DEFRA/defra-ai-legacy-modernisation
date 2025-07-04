@@ -12,6 +12,7 @@ This library provides a selection of prompts used by authors. These examples ser
 ### General
 
 - [Build Views in GDS Style](./general/build-views-in-gds-style.md)
+- [Connect To Backend API](./general/connect-to-backend-api.md)
 
 ---
 

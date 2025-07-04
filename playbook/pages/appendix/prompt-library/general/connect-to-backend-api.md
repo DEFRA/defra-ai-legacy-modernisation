@@ -2,26 +2,41 @@
 
 **Prompt:**
 
+```
+**Context:**  
+- The `<component>` on `<page>` needs to be connected to the backend API endpoint `<HTTP_METHOD> <ENDPOINT_PATH>` as defined in the OpenAPI spec.
 
-# CONTEXT
+**Analysis:**  
+- Identify the data flow: is this a data fetch (e.g. for a selector) or a data submit (e.g. for an input box)?
+- Check the OpenAPI spec for request/response structure and validation.
+- Determine what needs to change in the API client, controller, and template.
 
-# ANALYSIS PHASE
+**Implementation:**  
+- Update the API client and controller to fetch/submit data using the correct endpoint and data shape.
+- Update the Nunjucks template to use dynamic data or submit to the backend.
+- Handle errors and fallback UI as needed.
+- Keep the code concise and reusable.
 
-# IMPLEMENTATION PHASE
 
-## Key Considerations
+```
 
-- Ensure API endpoints are well-documented and follow RESTful or appropriate architectural standards.
-- Implement secure authentication and authorization.
-- Handle errors and edge cases gracefully in the UI.
-- Follow GDS (gov.uk) design and accessibility standards for any user-facing error or status messages.
+## Example Usage Of Prompt
 
-## Steps
+> **Context:**  
+> - The `fin-unit` selector` on `case-details` needs to be connected to the backend API endpoint `api/v1/reference/finishing-unit` as defined in the OpenAPI spec.
+>
+> **Analysis:**  
+> - Identify the data flow: is this a data fetch (e.g. for a selector) or a data submit (e.g. for an input box)?
+> - Check the OpenAPI spec for request/response structure and validation.
+> - Determine what needs to change in the API client, controller, and template.
+>
+> **Implementation:**  
+> - Update the API client and controller to fetch/submit data using the correct endpoint and data shape.
+> - Update the Nunjucks template to use dynamic data or submit to the backend.
+> - Handle errors and fallback UI as needed.
+> - Keep the code concise and reusable.
 
-1. Review the API documentation and available endpoints.
-2. Integrate API calls into your frontend code using appropriate libraries or frameworks.
-3. Test all interactions, including error handling and edge cases.
-4. Ensure accessibility and usability for all API-driven features.
+
 
 ---
 
