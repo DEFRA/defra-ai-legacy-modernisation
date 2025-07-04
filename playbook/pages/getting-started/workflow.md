@@ -9,7 +9,7 @@ The diagram below shows the main steps that are covered in this playbook. This w
 | 🔵 **Blue** | 💻 Legacy System | Starting point - the existing system to modernise |
 | 🟢 **Green** | 📋 Documentation Gathering | Collecting knowledge about the system and creating documentation |
 | 🟠 **Orange** | 📝 Requirements Building | Defining system requirements, epics and user stories |
-| 🟣 **Purple** | ⚙️ Implementation | Building, testing and validating the modernised system |
+| 🟣 **Purple** | 🪄⚙️ Implementation | Building, testing and validating the modernised system |
 | 🔴 **Pink** | 🏛️ Deployment | Final deployment to production environment |
 
 ### Workflow Diagram
@@ -22,7 +22,7 @@ flowchart TD
     D --> E["🤖 Prompt to test understanding of documentation"]
     E --> F["🤖 Prompt to create high-level overview of system"]
     F --> G["🤖 Prompt to create epics and user stories"]
-    G --> H["🤖 Take user stories and prompt to generate code and tests"]
+    G --> H["🪄🤖 Take user stories and prompt to generate code and tests"]
     H --> K["🧑‍💻 QA / testing with SME and end-users"]
     K --> J["🏛️ Deploy to Defra CDP"]
 

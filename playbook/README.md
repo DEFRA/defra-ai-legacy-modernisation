@@ -30,6 +30,7 @@ This playbook provides guidance on how to modernise legacy systems using AI tech
      - [Changelog Refactoring](./pages/pathways/sql-server/database/02-changelog-refactoring)
      - [MongoDB Decision Point](./pages/pathways/sql-server/database/03-mongodb-decision-point)
      - [MongoDB Migration](./pages/pathways/sql-server/database/04-mongodb-migration)
+     - [OpenAPI Specification](./pages/pathways/sql-server/api/openapi-specification)
 6. [Lessons Learnt](./pages/lessons-learnt/)
    - [Lessons Learnt](./pages/lessons-learnt/lessons-learnt)
    - [How To](./pages/lessons-learnt/how-to)

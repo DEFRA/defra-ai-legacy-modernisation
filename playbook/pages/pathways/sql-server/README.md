@@ -19,7 +19,7 @@ graph TD
     F --> G[SQL to Mongo Data Mapping]
     G --> H[Generate OpenAPI Specification]
     E -->|Stick with RDBMS| H
-    H --> I[Develop Backend API]
+    H --> I["🪄 Develop Backend API"]
 
     classDef database fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
     classDef process fill:#e3f2fd,stroke:#1976d2,stroke-width:2px

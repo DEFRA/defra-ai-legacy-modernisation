@@ -12,7 +12,7 @@ flowchart TD
     F -->|No| G["🔄 Refine Specification"]
     F -->|Yes| H["📚 Generate API Documentation"]
     G --> D
-    H --> I["🛠️ Begin API Implementation"]
+    H --> I["🪄 Begin API Implementation"]
 
     classDef database fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
     classDef process fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
