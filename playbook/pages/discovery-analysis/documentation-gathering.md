@@ -55,7 +55,7 @@ Fill documentation gaps and improve existing documentation quality to support AI
 - **Map data flows**: Show how data moves through the system
 - **Document business rules**: Capture validation rules and business logic
 - **Interview SMEs**: Conduct interviews to gather insights and context
-- **Export hard-to-reach code**: For example, extract VBA or SQL queries from databases
+- **Export hard-to-reach code**: For example, extract VBA or SQL queries from databases or spreadsheets
 - **Use AI to analyze code**: Generate documentation from source code
 - **Create process diagrams**: Convert text descriptions to flowcharts
 
@@ -89,7 +89,7 @@ Documentation gathering is complete when:
 
 ## Caveats
 
-It's important to understand that documentation gathering is an ongoing process throughout the modernisation journey, not a one-time activity. This stage focuses on establishing the foundational understanding needed to begin AI-assisted development.
+It's important to recognise that documentation gathering is an ongoing process throughout the modernisation journey, not a one-time activity. This stage focuses on establishing the foundational understanding needed to begin AI-assisted development.
 
 More in-depth, technology-specific documentation advice using AI tools will be provided in the relevant pathway sections (e.g., MS Access, SQL Server).
 
