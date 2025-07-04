@@ -11,7 +11,7 @@ flowchart TD
     E --> F["✅ Validate with Stakeholders"]
     F --> G{"Requirements Complete?"}
     G -->|No| H["🔄 Refine Requirements"]
-    G -->|Yes| I["🪄✅ Requirements Ready for Implementation"]
+    G -->|Yes| I["✅ Requirements Ready for Implementation"]
     H --> E
 
     classDef documentation fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
