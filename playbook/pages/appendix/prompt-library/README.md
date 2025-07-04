@@ -6,7 +6,12 @@ This library provides a selection of prompts used by authors. These examples ser
 ### MS Access
 
 - [SSMA SQL Refactor](./ms-access/ssma-sql-refactor)
-- [Liquibase Changelog Refactor](./ms-access//liquibase-changelog-refactor)
+- [Liquibase Changelog Refactor](./ms-access/liquibase-changelog-refactor)
+- [Access Form User Stories](./ms-access/access-form-user-stories.md)
+
+### General
+
+- [Build Views in GDS Style](./general/build-views-in-gds-style.md)
 
 ---
 

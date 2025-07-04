@@ -12,7 +12,7 @@ Microsoft Access applications typically consist of two main components that requ
 <pre class="mermaid">
 graph TD
     A[MS Access] -->|Frontend| B[Document Forms]
-    B --> C[Document Forms]
+    B --> C[Build Views in GDS Style]
     A -->|Database| D[SQL Server Migration Assistant SSMA]
     D --> E[Refactor Generated SQL]
     E --> F[Follow SQL Server Pathway]
