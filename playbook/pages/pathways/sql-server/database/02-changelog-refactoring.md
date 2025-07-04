@@ -201,4 +201,4 @@ For a complete mapping of how Liquibase converts generic types to database-speci
 
 ---
 
-[← Previous: Schema Extraction](01-schema-extraction.md) | [Next: Database Migration →](03-database-migration.md)
+[← Previous: Schema Extraction](01-schema-extraction) | [Next: MongoDB Decision Point →](03-mongodb-decision-point)

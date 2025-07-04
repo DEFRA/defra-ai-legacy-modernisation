@@ -16,6 +16,16 @@ graph TD
     A -->|Database| D[SQL Server Migration Assistant SSMA]
     D --> E[Refactor Generated SQL]
     E --> F[Follow SQL Server Pathway]
+
+    classDef legacy fill:#ffebee,stroke:#c62828,stroke-width:2px
+    classDef frontend fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef migration fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef pathway fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+
+    class A legacy
+    class B,C frontend
+    class D,E migration
+    class F pathway
 </pre>
 
 Both sub-paths (frontend and database) have been broken down into detailed guides which can be followed independently or in parallel, depending on the complexity of the Access application.
@@ -31,5 +41,7 @@ Both sub-paths (frontend and database) have been broken down into detailed guide
 3. **[Follow SQL Server Pathway](../sql-server/)**
 
 ---
+
+[← Previous: Requirements Building](../discovery-analysis/requirements-building) | [Next: SQL Server Pathway →](../sql-server/README)
 
 *This pathway is part of the DEFRA AI Legacy Modernisation Playbook. For questions or contributions, please refer to the main documentation.*

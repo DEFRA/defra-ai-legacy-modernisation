@@ -28,3 +28,7 @@ I want to refactor #file:db.changelog.xml. Your task is to follow the below step
   - changelog/db.changelog.xml
   - changelog/db.changelog-1.0.xml
 ```
+
+---
+
+[← Previous: Prompt Library](../README)

@@ -1,4 +1,3 @@
-
 # Lessons Learnt
 
 This document captures key lessons learnt during the DEFRA AI Legacy Modernisation project to help future teams avoid common pitfalls and adopt best practices.
@@ -107,36 +106,12 @@ This document captures key lessons learnt during the DEFRA AI Legacy Modernisati
 
 **Impact**: This approach provides greater flexibility in output formatting, reduces dependency on Microsoft services, and enables future format extensibility without system redesign. 
 
-
-### 7. Database Migration Strategy - WIP
-
-**Issue**: The legacy TB-CMS used Microsoft Access database, which is incompatible with modern development standards and cloud deployment requirements.
-
-**Root Cause**: Microsoft Access is a desktop database system that lacks scalability, cloud compatibility, and modern development tooling support required for contemporary applications.
-
-**Solution**: We migrated from Access to MongoDB using a structured approach:
-- Exported the original Access database schema
-- Converted the schema to Liquibase format for database-agnostic deployment
-- Used Copilot to generate synthetic test data matching the original structure
-- Validated the migration with comprehensive testing
-
-**Best Practice**: For database modernisation projects:
-- Use schema migration tools (Liquibase, Flyway) for database-agnostic deployments
-- Generate comprehensive synthetic data for testing
-- Maintain data structure integrity during migration
-- Consider NoSQL alternatives when appropriate for scalability
-- Implement thorough validation processes
-
-**Impact**: This migration enables cloud deployment, improved scalability, and alignment with modern development standards whilst maintaining data structure integrity.
-
 ## Future Considerations
 
 - Document other lessons learnt as the project progresses
 - Share insights with the broader team
 - Update this document regularly to capture new discoveries
 
-## Future Considerations
+---
 
-- Document other lessons learnt as the project progresses
-- Share insights with the broader team
-- Update this document regularly to capture new discoveries
+[← Previous: Requirements Building](../discovery-analysis/requirements-building) | [Next: How To →](how-to)

@@ -30,3 +30,7 @@ Create a summary file in markdown format with the following sections:
   - List of foreign keys renamed
   - Any other relevant notes
 ```
+
+---
+
+[← Previous: Prompt Library](../README)
