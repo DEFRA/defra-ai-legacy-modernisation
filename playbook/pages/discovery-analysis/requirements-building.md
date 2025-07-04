@@ -79,6 +79,6 @@ With requirements building complete, you're ready to move into implementation us
 
 ---
 
-[← Previous: Documentation Gathering](documentation-gathering) | [Next: Pathways Overview →](../pathways/README)
+[← Previous: Documentation Gathering](documentation-gathering) | [Next: Pathways Overview →](../pathways)
 
 *This page is part of the DEFRA AI Legacy Modernisation Playbook.*

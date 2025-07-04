@@ -47,4 +47,4 @@ In order to test the schema is suitable for the data, you will need to migrate t
 
 ---
 
-[← Previous: SSMA Migration](01-ssma-migration) | [Next: SQL Server Pathway →](../../sql-server/README)
+[← Previous: SSMA Migration](01-ssma-migration) | [Next: SQL Server Pathway →](../../sql-server)
