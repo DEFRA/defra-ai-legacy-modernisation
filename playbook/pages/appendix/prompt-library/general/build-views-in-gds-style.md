@@ -5,7 +5,7 @@
 ```
 # CONTEXT
 
-You have been provided with a screenshot of a screen from the legacy system and its associated user story. Your task is to create a single webpage based on the image and story.
+You are tasked with modernising a legacy system. Provided with a user story and a screenshot of a form from the legacy system, your goal is to create a single webpage that accurately reflects the design and functionality depicted in the image and story.
 
 # ANALYSIS PHASE
 

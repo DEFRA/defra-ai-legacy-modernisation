@@ -12,7 +12,8 @@ Microsoft Access applications typically consist of two main components that requ
 <pre class="mermaid">
 graph TD
     A[MS Access] -->|Frontend| B[Document Forms]
-    B --> C[Build Views in GDS Style]
+    B --> C[Build GDS-Compliant Views]
+    C --> G[Connect to Backend API]
     A -->|Database| D[SQL Server Migration Assistant SSMA]
     D --> E[Refactor Generated SQL]
     E --> F[Follow SQL Server Pathway]
@@ -23,7 +24,7 @@ graph TD
     classDef pathway fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
 
     class A legacy
-    class B,C frontend
+    class B,C,G frontend
     class D,E migration
     class F pathway
 </pre>
@@ -32,7 +33,9 @@ Both sub-paths (frontend and database) have been broken down into detailed guide
 
 ## Frontend
 
-1. **[Document UI](frontend/01-create-ui-documentation)**
+1. **[Document Forms](frontend/01-create-ui-documentation.md)**
+2. **[Build GDS-Compliant Views](frontend/02-build-gds-views.md)**
+3. **[Connect to Backend API](frontend/03-connect-backend-api.md)**
 
 ## Database
 
