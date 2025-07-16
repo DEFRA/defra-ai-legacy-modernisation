@@ -13,7 +13,7 @@ Using approved tools helps make sure:
 
 If you need to use an AI tool not listed in the guidance:
 
-1. Contact the AI Capabilities and Enablement team before using any unapproved tool. You can find contact details [here](../../README.md)
+1. Contact the AI Capabilities and Enablement team before using any unapproved tool. You can find contact details [here](../../.)
 2. Provide details about why you need the specific tool
 3. Wait for approval before proceeding
 
@@ -21,4 +21,4 @@ The team will assess the tool against Defra's security and compliance requiremen
 
 ---
 
-[← Previous: How To](../lessons-learnt/how-to) | [Next: Prompt Library →](prompt-library/README)
+[← Previous: How To](../lessons-learnt/how-to) | [Next: Prompt Library →](prompt-library/.)

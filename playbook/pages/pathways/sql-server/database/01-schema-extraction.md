@@ -129,4 +129,4 @@ You may find that the changelog is quite verbose and also contains SQL Server-sp
 
 ---
 
-[← Previous: SQL Server Pathway](../README) | [Next: Changelog Refactoring →](02-changelog-refactoring)
+[← Previous: SQL Server Pathway](../.) | [Next: Changelog Refactoring →](02-changelog-refactoring)

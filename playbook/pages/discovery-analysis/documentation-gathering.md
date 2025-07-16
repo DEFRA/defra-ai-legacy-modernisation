@@ -101,6 +101,6 @@ Once documentation gathering is complete, proceed to [Requirements Building](req
 
 ---
 
-[← Previous: Discovery and Analysis](README) | [Next: Requirements Building →](requirements-building)
+[← Previous: Discovery and Analysis](.) | [Next: Requirements Building →](requirements-building)
 
 *This page is part of the DEFRA AI Legacy Modernisation Playbook.*

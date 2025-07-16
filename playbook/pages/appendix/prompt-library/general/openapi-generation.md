@@ -127,4 +127,4 @@ servers:
 
 ---
 
-[← Previous: Prompt Library](../README)
+[← Previous: Prompt Library](../.)

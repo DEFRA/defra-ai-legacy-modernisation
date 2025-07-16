@@ -33,4 +33,4 @@ Create a summary file in markdown format with the following sections:
 
 ---
 
-[← Previous: Prompt Library](../README)
+[← Previous: Prompt Library](../.)

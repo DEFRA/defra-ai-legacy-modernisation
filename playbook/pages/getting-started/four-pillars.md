@@ -33,4 +33,4 @@ These pillars are essential for ensuring that AI can assist in accelerating lega
 
 **Where to start**: Ensure you have comprehensive documentation of the system's architecture, data models, and codebase. If existing documentation is lacking, consider using AI tools to help generate or improve it.
 
-[← Previous: Getting Started](README) | [Next: Workflow →](workflow)
+[← Previous: Getting Started](.) | [Next: Workflow →](workflow)

@@ -10,7 +10,7 @@ This playbook provides guidance on how to modernise legacy systems using AI tech
 > Any examples of potential AI tools and framework use (e.g. LangChain, Azure AI Studio, Semantic Kernel, OpenAI Assistants) are illustrative only. **Always consult the Defra AI Tools Authority or your technical governance lead** before selecting or implementing any AI technology to ensure alignment with internal standards, approved platforms, and procurement policy.
 
 ## Table of Contents
-1. [Welcome](README)
+1. [Welcome](.)
 2. [Responsible Practices](./pages/responsible-practices/)
    - [Ethics](./pages/responsible-practices/ethics)
    - [Sustainability](./pages/responsible-practices/sustainability)
@@ -24,7 +24,7 @@ This playbook provides guidance on how to modernise legacy systems using AI tech
    - [MS Access](./pages/pathways/ms-access/)
      - [SSMA Migration](./pages/pathways/ms-access/database/01-ssma-migration)
      - [SQL Refactoring](./pages/pathways/ms-access/database/02-sql-refactoring)
-     - [Document UI](./pages/pathways/ms-access/frontend/01-document-ui)
+     - [Document UI](./pages/pathways/ms-access/frontend/01-create-ui-documentation)
    - [SQL Server](./pages/pathways/sql-server/)
      - [Schema Extraction](./pages/pathways/sql-server/database/01-schema-extraction)
      - [Changelog Refactoring](./pages/pathways/sql-server/database/02-changelog-refactoring)
@@ -44,4 +44,4 @@ Defra manages environmental protection, food production and rural development ac
 
 ---
 
-[Next: Responsible Practices →](pages/responsible-practices/README)
+[Next: Responsible Practices →](pages/responsible-practices/.)

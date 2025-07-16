@@ -40,6 +40,6 @@ graph TD
 
 ---
 
-[← Previous: MS Access Pathway](../ms-access/README) | [Next: Schema Extraction →](database/01-schema-extraction)
+[← Previous: MS Access Pathway](../ms-access/.) | [Next: Schema Extraction →](database/01-schema-extraction)
 
 *This pathway is part of the DEFRA AI Legacy Modernisation Playbook.*

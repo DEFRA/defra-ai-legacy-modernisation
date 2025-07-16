@@ -78,4 +78,4 @@ Be transparent about AI assistance in public-facing services. Consider how AI us
 - [Understanding artificial intelligence ethics and safety](https://www.gov.uk/guidance/understanding-artificial-intelligence-ethics-and-safety)
 - [ICO guidance on AI and data protection](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/)
 
-[← Previous: Responsible Practices](README) | [Next: Sustainability →](sustainability) 
+[← Previous: Responsible Practices](.) | [Next: Sustainability →](sustainability) 

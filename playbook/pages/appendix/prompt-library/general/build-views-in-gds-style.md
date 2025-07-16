@@ -30,4 +30,4 @@ For each webpage:
 
 ---
 
-[← Back to Prompt Library](../README)
+[← Back to Prompt Library](../.)

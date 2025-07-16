@@ -19,4 +19,4 @@ Regardless, of the decision you make, AI tools can assist in the migration proce
 
 **Decision Point:** Choose your migration approach:
 - [MongoDB Migration →](04-mongodb-migration)
-- [Relational Database Path →](05-openapi-specification)
+- [Relational Database Path →](../api/openapi-specification)

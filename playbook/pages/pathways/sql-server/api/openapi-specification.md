@@ -70,7 +70,7 @@ You can also use AI tools to help process existing documentation and user storie
 
 Use AI tools to quickly generate OpenAPI specifications based on your system documentation and business requirements.
 
-For detailed guidance on creating comprehensive OpenAPI specifications with AI, see the [OpenAPI Generation Prompt](../../appendix/prompt-library/general/openapi-generation) in the prompt library.
+For detailed guidance on creating comprehensive OpenAPI specifications with AI, see the [OpenAPI Generation Prompt](../../../appendix/prompt-library/general/openapi-generation) in the prompt library.
 
 ### 4. Validate with Subject Matter Experts
 
@@ -111,6 +111,6 @@ Once the OpenAPI specification is complete and validated:
 
 ---
 
-[← Previous: Database Migration](../README) | [Next: API Implementation →](../api/README)
+[← Previous: Database Migration](../,) | [Next: API Implementation →](../api/.)
 
 *This page is part of the DEFRA AI Legacy Modernisation Playbook.*

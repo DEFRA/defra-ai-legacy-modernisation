@@ -69,4 +69,4 @@ MongoDB migration consists of two key phases that can be covered in the same pro
 
 ---
 
-[← Previous: MongoDB Decision Point](03-mongodb-decision-point) | [Next: Generate OpenAPI Specification →](../api/05-openapi-specification)
+[← Previous: MongoDB Decision Point](03-mongodb-decision-point) | [Next: Generate OpenAPI Specification →](../api/openapi-specification)

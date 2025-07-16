@@ -40,4 +40,4 @@
 
 ---
 
-[← Back to Prompt Library](../README.md)
+[← Back to Prompt Library](../.)

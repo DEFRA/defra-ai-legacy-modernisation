@@ -12,4 +12,4 @@
 
 ---
 
-[← Previous: MS Access Pathway](../README) | [Next: SQL Refactoring →](02-sql-refactoring)
+[← Previous: MS Access Pathway](../.) | [Next: SQL Refactoring →](02-sql-refactoring)

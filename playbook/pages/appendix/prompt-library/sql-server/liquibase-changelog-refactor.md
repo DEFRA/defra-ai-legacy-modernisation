@@ -31,4 +31,4 @@ I want to refactor #file:db.changelog.xml. Your task is to follow the below step
 
 ---
 
-[← Previous: Prompt Library](../README)
+[← Previous: Prompt Library](../.)

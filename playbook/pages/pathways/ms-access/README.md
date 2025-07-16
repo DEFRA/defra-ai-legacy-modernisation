@@ -32,7 +32,7 @@ Both sub-paths (frontend and database) have been broken down into detailed guide
 
 ## Frontend
 
-1. **[Document UI](frontend/01-document-ui)**
+1. **[Document UI](frontend/01-create-ui-documentation)**
 
 ## Database
 
@@ -42,6 +42,6 @@ Both sub-paths (frontend and database) have been broken down into detailed guide
 
 ---
 
-[← Previous: Requirements Building](../discovery-analysis/requirements-building) | [Next: SQL Server Pathway →](../sql-server/README)
+[← Previous: Requirements Building](../discovery-analysis/requirements-building) | [Next: SQL Server Pathway →](../sql-server/.)
 
 *This pathway is part of the DEFRA AI Legacy Modernisation Playbook. For questions or contributions, please refer to the main documentation.*

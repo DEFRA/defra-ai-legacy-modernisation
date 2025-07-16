@@ -62,7 +62,7 @@ High-quality documentation is essential for effective AI assistance—the more c
 ### Stage-Based Progression
 The first three stages (Legacy System Assessment, Documentation Gathering, and Requirements Building) are generic and foundational—they set the groundwork for AI assistance in later stages.
 
-The final stages (Implementation and Deployment) are tailored to specific technology pathways covered in the [Pathways section](../pathways/README).
+The final stages (Implementation and Deployment) are tailored to specific technology pathways covered in the [Pathways section](../pathways/.).
 
 ### Iterative and Adaptive Approach
 The process is designed to be iterative, allowing for continuous validation and improvement, incremental delivery of value, and flexibility to adapt based on learning or changing requirements.
@@ -78,8 +78,8 @@ The process is designed to be iterative, allowing for continuous validation and 
 ## Related Resources
 
 - [Four Pillars of Legacy Modernisation](./four-pillars)
-- [Prompt Library](../appendix/prompt-library/README)
-- [Responsible Practices](../responsible-practices/README)
+- [Prompt Library](../appendix/prompt-library/)
+- [Responsible Practices](../responsible-practices/)
 
 ---
 

@@ -9,4 +9,4 @@ Use AI tools ethically and sustainably when using AI in modernising legacy syste
 
 ---
 
-[← Previous: Welcome](../README.md) | [Next: Ethics →](ethics.md)
+[← Previous: Welcome](../.) | [Next: Ethics →](ethics.md)

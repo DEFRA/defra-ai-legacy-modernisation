@@ -54,4 +54,4 @@ Include requirements such as:
 
 
 
-[← Previous: Prompt Library](../README)
+[← Previous: Prompt Library](../.)
