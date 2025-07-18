@@ -50,12 +50,13 @@ Create an inventory of existing documentation with quality assessment to allow A
 ### 3. Create and Improve Documentation
 
 Fill documentation gaps and improve existing documentation quality to support AI assistance. This typically involves a combination of manual and AI-assisted tasks:
-- **Screenshot user interfaces**: Capture all screens, forms, and reports
+- **Screenshot and annotate user interfaces**: Capture all screens, forms, reports, and annotate the components on screens/forms to explain their function
 - **Record business processes**: Document step-by-step workflows
 - **Map data flows**: Show how data moves through the system
 - **Document business rules**: Capture validation rules and business logic
 - **Interview SMEs**: Conduct interviews to gather insights and context
 - **Export hard-to-reach code**: For example, extract VBA or SQL queries from databases or spreadsheets
+- **Use AI to analyse annotated screenshots**: Generate markdown files with detailed descriptions of the screenshots
 - **Use AI to analyze code**: Generate documentation from source code
 - **Create process diagrams**: Convert text descriptions to flowcharts
 

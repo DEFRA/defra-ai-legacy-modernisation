@@ -4,9 +4,9 @@ Use AI tools ethically and sustainably when using AI in modernising legacy syste
 
 ## In this section
 
-1. [Ethics](ethics.md) - How to use AI tools ethically in software development
-2. [Sustainability](sustainability.md) - How to reduce environmental impact of AI tools
+1. [Ethics](ethics) - How to use AI tools ethically in software development
+2. [Sustainability](sustainability) - How to reduce environmental impact of AI tools
 
 ---
 
-[← Previous: Welcome](../.) | [Next: Ethics →](ethics.md)
+[← Previous: Welcome](../.) | [Next: Ethics →](ethics)

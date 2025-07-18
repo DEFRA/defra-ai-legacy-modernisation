@@ -64,7 +64,7 @@ AI-generated outputs may contain security flaws or errors that look correct. Alw
 AI tools may generate outputs based on copyrighted material. Make sure AI-assisted outputs follows open source licensing requirements and government IP policies.
 
 ### Environmental impact
-AI tools use computing resources. Consider environmental costs and use AI tools in proportion to the task complexity.  See [Sustainability](sustainability.md) for more information.
+AI tools use computing resources. Consider environmental costs and use AI tools in proportion to the task complexity.  See [Sustainability](sustainability) for more information.
 
 ### Skills and development
 - Use AI tools to enhance rather than replace human expertise.

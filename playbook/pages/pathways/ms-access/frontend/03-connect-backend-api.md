@@ -88,7 +88,7 @@ Connect your GDS views to backend services:
 3. **Provide context** about your specific API endpoints and data requirements
 4. **Include error handling** and user experience requirements
 
-The [Connect to Backend API guidance](../../../appendix/prompt-library/general/connect-to-backend-api.md) helps ensure:
+The [Connect to Backend API guidance](../../../appendix/prompt-library/general/connect-to-backend-api) helps ensure:
 - Proper error handling and user feedback
 - Appropriate loading states and progress indicators
 - Secure data transmission and storage

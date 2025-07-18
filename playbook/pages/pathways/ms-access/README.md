@@ -33,9 +33,9 @@ Both sub-paths (frontend and database) have been broken down into detailed guide
 
 ## Frontend
 
-1. **[Document Forms](frontend/01-create-ui-documentation.md)**
-2. **[Build GDS-Compliant Views](frontend/02-build-gds-views.md)**
-3. **[Connect to Backend API](frontend/03-connect-backend-api.md)**
+1. **[Document Forms](frontend/01-create-ui-documentation)**
+2. **[Build GDS-Compliant Views](frontend/02-build-gds-views)**
+3. **[Connect to Backend API](frontend/03-connect-backend-api)**
 
 ## Database
 

@@ -12,7 +12,7 @@ For the purposes of this guide, we will focus on refactoring the changelog for P
 - Access to the SQL Server database
 - Domain knowledge of your database structure and application
 - AI tool for changelog refactoring
-- Liquibase changelog refactor prompt ([see prompt library](../../../appendix/prompt-library/sql-server/liquibase-changelog-refactor.md))
+- Liquibase changelog refactor prompt ([see prompt library](../../../appendix/prompt-library/sql-server/liquibase-changelog-refactor))
 
 ## Refactoring Process
 

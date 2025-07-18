@@ -38,4 +38,4 @@ Document how the `business` table maps to the MongoDB schema:
 
 ---
 
-[← Previous: Liquibase Changelog Refactor](./liquibase-changelog-refactor.md)
+[← Previous: Liquibase Changelog Refactor](./liquibase-changelog-refactor)

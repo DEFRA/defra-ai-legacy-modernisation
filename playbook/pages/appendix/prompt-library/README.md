@@ -11,13 +11,14 @@ This library provides a selection of prompts used by authors. These examples ser
 ### SQL Server
 
 - [Liquibase Changelog Refactor](./sql-server/liquibase-changelog-refactor)
-- [MongoDB ERD Creation](./sql-server/mongodb-erd-creation.md)
+- [MongoDB ERD Creation](./sql-server/mongodb-erd-creation)
 
 ### General
 
 - [Build Views in GDS Style](./general/build-views-in-gds-style)
 - [Connect To Backend API](./general/connect-to-backend-api)
-- [OpenAPI Specification Generation](./general/openapi-generation.md)
+- [OpenAPI Specification Generation](./general/openapi-generation)
+- [User Story Ticket Template](./general/user-story-ticket-template)
 
 ---
 

@@ -39,7 +39,7 @@ MongoDB migration consists of two key phases that can be covered in the same pro
 ### Prerequisites
 
 - **Capable model**: We recommend using a large language model (LLM) with a large context window for this step. The Liquibase changelog being used for context will likely be very large.
-- **MongoDB ERD Creation Prompt**: Use the [MongoDB ERD Creation Prompt](../../../appendix/prompt-library/sql-server/mongodb-schema-creation.md) to guide the AI in designing the MongoDB schema, table by table, based on the Liquibase changelog and system documentation.
+- **MongoDB ERD Creation Prompt**: Use the [MongoDB ERD Creation Prompt](../../../appendix/prompt-library/sql-server/mongodb-schema-creation) to guide the AI in designing the MongoDB schema, table by table, based on the Liquibase changelog and system documentation.
 
 ### Step-by-Step Process
 
@@ -49,7 +49,7 @@ MongoDB migration consists of two key phases that can be covered in the same pro
    - You don't need to capture the columns and relations - the Liquibase changelog will provide enough context for the AI tool
 
 2. **Generate Schema for Each Table**
-   - Using the [MongoDB ERD Creation Prompt](../../../appendix/prompt-library/sql-server/mongodb-schema-creation.md), edit the prompt to reference the specific table
+   - Using the [MongoDB ERD Creation Prompt](../../../appendix/prompt-library/sql-server/mongodb-schema-creation), edit the prompt to reference the specific table
    - The AI tool will use the changelog for context and suggest whether:
      - A new document/collection type is required
      - An embedded document in an existing collection

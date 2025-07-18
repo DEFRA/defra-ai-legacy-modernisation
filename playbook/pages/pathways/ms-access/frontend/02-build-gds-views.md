@@ -61,7 +61,7 @@ Leverage AI tools to generate initial code while ensuring quality and compliance
 3. **Provide clear context** about the specific form you're implementing
 4. **Include screenshots** of the original form for visual reference
 
-The [Build Views in GDS Style prompt](../../../appendix/prompt-library/general/build-views-in-gds-style.md) ensures that generated code:
+The [Build Views in GDS Style prompt](../../../appendix/prompt-library/general/build-views-in-gds-style) ensures that generated code:
 - Follows GDS Design System patterns
 - Implements proper semantic HTML
 - Includes appropriate ARIA labels and accessibility features

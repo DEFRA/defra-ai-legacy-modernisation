@@ -109,7 +109,7 @@ Once forms are thoroughly documented, the next step is generating comprehensive 
 2. **Use the Access Form User Stories prompt** from our prompt library to guide AI tools in creating comprehensive user stories
 3. **Review and refine** the generated user stories to ensure they capture all requirements
 
-The [Access Form User Stories prompt](../../../appendix/prompt-library/ms-access/access-form-user-stories.md) provides a structured template that ensures:
+The [Access Form User Stories prompt](../../../appendix/prompt-library/ms-access/access-form-user-stories) provides a structured template that ensures:
 - Clear user roles and goals
 - Comprehensive component documentation
 - Detailed acceptance criteria
