@@ -105,7 +105,7 @@ mkdir -p changelog
 Start the PostgreSQL container:
 
 ```bash
-docker-compose up -d postgres
+docker-compose -f sql-server.compose.yml up -d postgres
 ```
 
 Wait for PostgreSQL to fully initialize and pass health checks before proceeding with Liquibase operations.
@@ -116,13 +116,13 @@ Once your PostgreSQL container is running, test your refactored changelog:
 
 ```bash
 # Validate the changelog syntax
-docker-compose run --rm liquibase validate
+docker-compose -f sql-server.compose.yml run --rm liquibase validate
 
 # Check status against the PostgreSQL database
-docker-compose run --rm liquibase status
+docker-compose -f sql-server.compose.yml run --rm liquibase status
 
 # Apply the changelog to PostgreSQL (if validation passes)
-docker-compose run --rm liquibase update
+docker-compose -f sql-server.compose.yml run --rm liquibase update
 ```
 
 You should now have a refactored Liquibase changelog that has been deployed to your local PostgreSQL database. This can also be used as context for AI tools to further refine or generate application code based on the database schema.

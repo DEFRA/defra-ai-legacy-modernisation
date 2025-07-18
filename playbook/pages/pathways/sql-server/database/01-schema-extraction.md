@@ -14,7 +14,7 @@ The first step in our SQL Server migration pathway is to extract the existing da
 
 ### 1. Create Docker Compose Configuration
 
-Create a `docker-compose.yml` file with the following configuration to set up both SQL Server and Liquibase containers.
+Create a `sql-server.compose.yml` file with the following configuration to set up both SQL Server and Liquibase containers.
 
 **NOTE**: Ensure you have read and accept the SQL Server Developer Edition [license terms](https://www.microsoft.com/en-us/sql-server/sql-server-downloads). If you accept the EULA, set `ACCEPT_EULA` to 'Y' in the environment variables.
 
@@ -78,7 +78,7 @@ mkdir changelog
 Start the SQL Server container:
 
 ```bash
-docker-compose up -d mssql
+docker-compose -f sql-server.compose.yml up -d mssql
 ```
 
 Wait for SQL Server to fully initialize (check logs with `docker-compose logs mssql`) before proceeding with Liquibase operations.
@@ -90,7 +90,7 @@ Wait for SQL Server to fully initialize (check logs with `docker-compose logs ms
 Once your SQL Server container is running and your database is accessible, generate the initial changelog from your existing database schema:
 
 ```bash
-docker-compose run --rm liquibase generate-changelog
+docker-compose -f sql-server.compose.yml run --rm liquibase generate-changelog
 ```
 
 This will create a `changelog/db.changelog.xml` file containing your current database structure.
@@ -100,7 +100,7 @@ This will create a `changelog/db.changelog.xml` file containing your current dat
 Verify that the changelog was generated correctly:
 
 ```bash
-docker-compose run --rm liquibase validate
+docker-compose -f sql-server.compose.yml run --rm liquibase validate
 ```
 
 ### 3. Check Changelog Status
@@ -108,7 +108,7 @@ docker-compose run --rm liquibase validate
 Check the current status of your database against the changelog:
 
 ```bash
-docker-compose run --rm liquibase status
+docker-compose -f sql-server.compose.yml run --rm liquibase status
 ```
 
 ### 4. Review Generated Files

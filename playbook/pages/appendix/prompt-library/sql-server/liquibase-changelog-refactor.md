@@ -5,7 +5,7 @@ This prompt can be used to generate and refactor Liquibase changelogs that have 
 ```
 I want to refactor #file:db.changelog.xml. Your task is to follow the below steps to analyze it and refactor it according to the specified rules.
 
-You are allowed create / run any python scripts or terminal commands to assist in the analysis and refactoring process.
+You are allowed to create / run any python scripts or terminal commands to assist in the analysis and refactoring process.
 
 # ANALYSIS PHASE
 1. Analyze the generated changelog to identify the structure and content.

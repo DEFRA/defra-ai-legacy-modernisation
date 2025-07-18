@@ -4,9 +4,9 @@ This prompt can be used to suggest how a table from a RDBMS could be incorporate
 
 ```
 I need to include the `business` table from a SQL database in a new MongoDB schema. You can use the following:
-* #file:documentation - System documentation to provide domain / business entity context
-* #file:db.changelog.xml - Liquibase changelog for SQL table context
-* #file:mongo-erd.md - Contains the current Mongo schema Mermaid ERD. Create this if it does not exist.
+- #file:documentation - System documentation to provide domain / business entity context
+- #file:db.changelog.xml - Liquibase changelog for SQL table context
+- #file:mongo-erd.md - Contains the current Mongo schema Mermaid ERD. Create this if it does not exist.
 
 # ANALYSIS PHASE
 1. Analyze the generated changelog to identify the structure and content.
