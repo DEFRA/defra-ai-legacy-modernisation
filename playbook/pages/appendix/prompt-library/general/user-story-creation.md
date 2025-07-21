@@ -1,19 +1,13 @@
-# Ticket Template
+# User Story Generation
 
-This template provides a structured format for creating user stories that can be effectively processed by AI tools during legacy system modernisation. It ensures that generated tickets are manageable in scope and contain all necessary context for development teams.
-
-**When to use this template:**
-- Converting legacy system requirements into user stories
-- Breaking down large features into manageable development tasks
-- Providing AI tools with structured input for ticket generation
-- Ensuring consistency across development teams
-
-**Prompt:**
+This prompt can be used to create user stories for a legacy system modernisation project based on existing system documentation. An example ticket template has been provided below but you can swap it out for your own if you have a different format.
 
 ```
 # Context
 
-Use this template to create well-structured user stories for legacy system modernisation. Each ticket should be focused on a single, testable piece of functionality that can be completed within a sprint.
+You are a business analyst working in a legacy system modernisation project. Your task is to create user stories based on the provided system documentation and requirements. Each user story should be focused on a single, testable piece of functionality that can be completed within a sprint.
+
+You should use the following template to structure your user stories and 
 
 ## Background
 **What/why is this ticket needed?**
@@ -61,11 +55,12 @@ Use this template to create well-structured user stories for legacy system moder
 
 When using this template with AI tools:
 
-1. **Keep scope small**: Each ticket should represent 1-3 days of development work
-2. **Be specific**: Avoid vague requirements - use concrete, testable criteria
-3. **Include context**: Reference the legacy system being replaced or modernised
-4. **Consider dependencies**: Identify blocking relationships early
-5. **Focus on user value**: Every ticket should deliver tangible user benefit
+1. **Link to Epic**: Ensure each user story is linked to a relevant epic
+2. **Keep scope small**: Each ticket should have a single clear scope that can be completed within a sprint
+3. **Be specific**: Avoid vague requirements - use concrete, testable criteria
+4. **Include context**: Reference the legacy system being replaced or modernised
+5. **Consider dependencies**: Identify blocking relationships early
+6. **Focus on user value**: Every ticket should deliver tangible user benefit
 
 ---
 

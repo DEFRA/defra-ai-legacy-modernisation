@@ -17,8 +17,9 @@ This library provides a selection of prompts used by authors. These examples ser
 
 - [Build Views in GDS Style](./general/build-views-in-gds-style)
 - [Connect To Backend API](./general/connect-to-backend-api)
+- [Epics Generation](./general/epics-generation)
 - [OpenAPI Specification Generation](./general/openapi-generation)
-- [User Story Ticket Template](./general/user-story-ticket-template)
+- [User Story Creation](./general/user-story-creation)
 
 ---
 
