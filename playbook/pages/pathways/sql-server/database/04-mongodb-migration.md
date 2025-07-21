@@ -9,11 +9,11 @@ MongoDB schemas (like all NoSQL databases) should be designed around how your ap
 <pre class="mermaid">
 flowchart TD
     START["🗄️ MongoDB Migration"] --> A["📋 Identify Core Business Entities"]
-    A --> B["🎯🤖 Select Next Table"]
-    B --> C["🤖🧑‍💻 Generate MongoDB Schema for Table"]
+    A --> B["🎯🤖 Select Next Business Entity"]
+    B --> C["🤖🧑‍💻 Generate MongoDB Schema for Entity"]
     C --> D{"🧑‍💻 Schema Appropriate?"}
     D -->|No| E["🔄🤖🧑‍💻 Refine Schema Design"]
-    D -->|Yes| F{"🧑‍💻 More Tables?"}
+    D -->|Yes| F{"🧑‍💻 More Entities?"}
     E --> C
     F -->|Yes| B
     F -->|No| G["📊🤖🧑‍💻 Generate Complete ERD"]
@@ -39,7 +39,7 @@ MongoDB migration consists of two key phases that can be covered in the same pro
 ### Prerequisites
 
 - **Capable model**: We recommend using a large language model (LLM) with a large context window for this step. The Liquibase changelog being used for context will likely be very large.
-- **MongoDB ERD Creation Prompt**: Use the [MongoDB ERD Creation Prompt](../../../appendix/prompt-library/sql-server/mongodb-schema-creation) to guide the AI in designing the MongoDB schema, table by table, based on the Liquibase changelog and system documentation.
+- **MongoDB ERD Creation Prompt**: Use the [MongoDB ERD Creation Prompt](../../../appendix/prompt-library/sql-server/mongodb-schema-creation) to guide the AI in designing the MongoDB schema, entity by entity, based on the Liquibase changelog and system documentation.
 
 ### Step-by-Step Process
 
@@ -48,24 +48,24 @@ MongoDB migration consists of two key phases that can be covered in the same pro
    - Make a list of the core business entities
    - You don't need to capture the columns and relations - the Liquibase changelog will provide enough context for the AI tool
 
-2. **Generate Schema for Each Table**
-   - Using the [MongoDB ERD Creation Prompt](../../../appendix/prompt-library/sql-server/mongodb-schema-creation), edit the prompt to reference the specific table
+2. **Generate Schema for Each Business Entity**
+   - Using the [MongoDB ERD Creation Prompt](../../../appendix/prompt-library/sql-server/mongodb-schema-creation), edit the prompt to reference the specific business entity
    - The AI tool will use the changelog for context and suggest whether:
      - A new document/collection type is required
      - An embedded document in an existing collection
      - Separate collection with cache reference (in case of lookups)
 
-3. **Iterate Through All Tables**
-   - Repeat the schema generation process for each table until all are covered
-   - Validate each schema design before moving to the next table
+3. **Iterate Through All Business Entities**
+   - Repeat the schema generation process for each business entity until all are covered
+   - Validate each schema design before moving to the next entity
 
 4. **Generate Complete ERD**
-   - Once all tables are processed, generate a comprehensive Entity Relationship Diagram
+   - Once all entities are processed, generate a comprehensive Entity Relationship Diagram
    - Review the ERD to ensure it meets all requirements and optimizes for your application's data access patterns
 
 ## Guidelines
 
-**Keep your prompt focused**: We have found that processing one table at a time gets better results from the AI due to the smaller context load. It also allows for more robust human-in-the loop verification and better suggest tweaks and improvements.
+**Keep your prompt focused**: We have found that processing one business entity at a time gets better results from the AI due to the smaller context load. It also allows for more robust human-in-the loop verification and better suggest tweaks and improvements.
 
 ---
 
