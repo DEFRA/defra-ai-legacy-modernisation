@@ -111,6 +111,6 @@ Once the OpenAPI specification is complete and validated:
 
 ---
 
-[← Previous: Database Migration](../,) | [Next: API Implementation →](../api/.)
+[← Previous: Database Migration](../,)
 
 *This page is part of the DEFRA AI Legacy Modernisation Playbook.*

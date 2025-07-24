@@ -45,6 +45,6 @@ Both sub-paths (frontend and database) have been broken down into detailed guide
 
 ---
 
-[← Previous: Requirements Building](../discovery-analysis/requirements-building) | [Next: SQL Server Pathway →](../sql-server/.)
+[← Previous: Requirements Building](../../discovery-analysis/requirements-building.md) | [Next: SQL Server Pathway →](../sql-server/.)
 
 *This pathway is part of the DEFRA AI Legacy Modernisation Playbook. For questions or contributions, please refer to the main documentation.*
