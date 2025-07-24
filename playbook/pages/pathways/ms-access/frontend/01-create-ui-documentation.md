@@ -1,138 +1,129 @@
-# Document Forms
+# Refine User Stories
 
 ## Overview
 
-The first step in our MS Access frontend migration pathway is to thoroughly document all forms within the legacy system. This documentation serves as the foundation for creating user stories and eventually modernising the user interface using GDS design standards. Proper documentation ensures that business requirements and user workflows are fully captured before beginning technical implementation.
+At this stage, all forms from the legacy system should have been documented and initial user stories created. This step focuses on refining those user stories to ensure they provide clear, actionable requirements when implemented by AI tools.
 
 <pre class="mermaid">
 flowchart TD
-    A["🏢 MS Access Application"] --> B["📋 Inventory All Forms"]
-    B --> C["📝 Document Form Details"]
-    C --> D["📸 Capture Visual Documentation"]
-    D --> E["📖 Generate User Stories"]
-    E --> F{"Documentation Complete?"}
-    F -->|No| G["🔄 Refine Documentation"]
-    F -->|Yes| H["✅ Complete Documentation Package"]
-    G --> C
+    A["📖 Initial User Stories"] --> B["� Review Story Quality"]
+    B --> C["✏️ Refine Requirements"]
+    C --> D["✅ Validate Acceptance Criteria"]
+    D --> E{"Stories AI-Ready?"}
+    E -->|No| F["🔄 Further Refinement"]
+    E -->|Yes| G["✅ Refined User Stories"]
+    F --> C
 
-    classDef legacy fill:#ffebee,stroke:#c62828,stroke-width:2px
-    classDef process fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    classDef documentation fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef decision fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef input fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef process fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef validation fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef decision fill:#ffebee,stroke:#c62828,stroke-width:2px
     classDef output fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
 
-    class A legacy
-    class B,C,D process
-    class E documentation
-    class F,G decision
-    class H output
+    class A input
+    class B,C,F process
+    class D validation
+    class E decision
+    class G output
 </pre>
 
 ## Prerequisites
 
-- Access to the MS Access application and its forms
-- Screenshots or detailed descriptions of each form
+- Initial user stories generated from form documentation
+- Screenshots and detailed descriptions of each form
 - Understanding of user roles and business processes
-- Domain knowledge of the application workflows
+- Access to the [Access Form User Stories prompt](../../../appendix/prompt-library/ms-access/access-form-user-stories)
 
-## Documentation Process
+## Refinement Process
 
-### 1. Inventory All Forms
+### 1. Review Story Quality
 
-Begin by creating a comprehensive inventory of all forms in your MS Access application:
+Assess each user story against these criteria:
 
-1. **Navigate through the application** systematically to identify all forms
-2. **Create a master list** with form names and their primary purposes
-3. **Note the relationships** between forms (how users navigate between them)
-4. **Identify user roles** that interact with each form
+**Clarity Checklist:**
+- Is the user role clearly defined?
+- Is the user goal specific and measurable?
+- Are the acceptance criteria testable?
+- Do the stories include all necessary technical details?
 
-### 2. Document Form Details
+**Completeness Checklist:**
+- Are all form components documented?
+- Are business rules and validation captured?
+- Are accessibility requirements included?
+- Are error scenarios addressed?
 
-For each form identified, create detailed documentation including:
+### 2. Enhance Technical Detail
 
-#### Form Structure
-- **Form name and purpose**
-- **Primary user role(s)** who interact with the form
-- **Business process** the form supports
-- **Navigation context** (how users reach this form)
+For AI implementation success, ensure each story includes:
 
-#### Interactive Elements
-Document every interactive component:
-- **Input fields** (text boxes, dropdowns, checkboxes, radio buttons)
-- **Buttons** and their actions
-- **Navigation elements** (tabs, menus)
-- **Data display areas** (tables, reports, calculated fields)
-- **Validation rules** and error handling
-- **Contextual tools** (calendar widgets, lookup functions)
+**Component Specifications:**
+- Exact field types and validation rules
+- Interactive behaviour descriptions
+- Dependency relationships between fields
+- Data binding requirements
 
-#### Business Logic
-- **Field dependencies** (conditional showing/hiding of elements)
-- **Calculation rules** for computed fields
-- **Data validation requirements**
-- **Workflow rules** and approval processes
+**Visual Requirements:**
+- Layout and positioning details
+- Responsive design considerations
+- GDS Design System component usage
+- Accessibility compliance (WCAG 2.1 AA)
 
-### 3. Capture Visual Documentation
+### 3. Refine Acceptance Criteria
 
-Create visual documentation to supplement textual descriptions:
+Transform vague criteria into specific, testable requirements:
 
-1. **Take screenshots** of each form in its various states
-2. **Document different views** (create, edit, read-only modes)
-3. **Capture error states** and validation messages
-4. **Record any dynamic behaviours** (fields that appear/disappear based on selections)
+**Before:** "User can enter data"
+**After:** "User can enter alphanumeric text up to 50 characters in the 'Project Name' field with real-time validation showing error message if exceeded"
 
-#### Best Practices for Visual Documentation
+**Before:** "Form validates correctly"
+**After:** "Form displays specific error messages for required fields, email format validation, and date range validation with focus management for screen readers"
 
-**Important**: When creating visual references for AI tools like GitHub Copilot, follow these specifications based on lessons learned:
+### 4. AI Tool Optimization
 
-**Image Format Requirements:**
-- Export screenshots as PNG or JPEG images (avoid PowerPoint .pptx files)
-- Minimum resolution: 1080px width
-- Use high quality export settings
-- Ensure text is clearly readable and UI elements are crisp
+Structure stories for optimal AI tool consumption:
 
-**Content Guidelines:**
-- Include multiple views/states of components when relevant
-- Provide both overview and detailed views of complex forms
-- Capture all interactive elements clearly
-- Ensure form labels and field names are legible
+**Use Structured Formats:**
+- Clear headings and bullet points
+- Consistent terminology throughout
+- Technical specifications separated from user goals
+- Visual references properly formatted (PNG/JPEG, high resolution)
 
-**Why This Matters:**
-AI tools work significantly better with high-resolution image formats that provide clear visual information rather than proprietary document formats. This approach has been proven to improve the accuracy of AI-generated code and reduce revision cycles needed to match the intended design.
+**Include Context:**
+- Reference existing GDS patterns where applicable
+- Link to relevant design system components
+- Specify browser and device support requirements
 
-## Generating User Stories
+## Quality Checklist
 
-Once forms are thoroughly documented, the next step is generating comprehensive user stories following GDS service design standards.
+Before proceeding to implementation, verify each user story meets these standards:
 
-### Using AI Tools for User Story Generation
+**Technical Readiness:**
+- [ ] All UI components are specified with exact requirements
+- [ ] Business logic and validation rules are clearly defined
+- [ ] Dependencies between fields and forms are documented
+- [ ] Error handling scenarios are covered
 
-1. **Prepare your documentation** with screenshots and detailed descriptions
-2. **Use the Access Form User Stories prompt** from our prompt library to guide AI tools in creating comprehensive user stories
-3. **Review and refine** the generated user stories to ensure they capture all requirements
+**AI Implementation Ready:**
+- [ ] Stories use consistent, technical language
+- [ ] Visual references are high-resolution images (PNG/JPEG)
+- [ ] GDS Design System components are referenced where applicable
+- [ ] Accessibility requirements are specific and testable
 
-The [Access Form User Stories prompt](../../../appendix/prompt-library/ms-access/access-form-user-stories) provides a structured template that ensures:
-- Clear user roles and goals
-- Comprehensive component documentation
-- Detailed acceptance criteria
-- GDS accessibility and design compliance requirements
-
-### Key Elements of Effective User Stories
-
-Each user story should include:
-- **Clear user role** and context
-- **Specific user goal** and desired outcome
-- **Complete component inventory** with interactions
-- **Testable acceptance criteria**
-- **Accessibility requirements** aligned with GDS standards
+**Completeness:**
+- [ ] All user journeys through the form are covered
+- [ ] Edge cases and error scenarios are addressed
+- [ ] Integration points with other systems are defined
+- [ ] Performance and usability requirements are specified
 
 ## Output and Next Steps
 
-By the end of this phase, you should have:
-- Complete inventory of all forms in the legacy system
-- Detailed documentation for each form including structure, components, and business logic
-- Visual documentation (screenshots) of all form states
-- Comprehensive user stories following GDS standards
+By the end of this refinement process, you should have:
+- **AI-ready user stories** with specific, testable acceptance criteria
+- **Enhanced technical specifications** for all form components
+- **Clear accessibility requirements** aligned with GDS standards
+- **Structured documentation** optimized for AI tool consumption
 
-This documentation will serve as the foundation for the next step: building modern, accessible user interfaces that maintain the functionality of the legacy system while following current design standards.
+These refined user stories will serve as the foundation for building modern, accessible user interfaces using AI development tools.
 
 ---
 

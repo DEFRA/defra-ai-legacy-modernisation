@@ -6,36 +6,33 @@ After documenting forms and creating user stories, the next step is to build mod
 
 <pre class="mermaid">
 flowchart TD
-    A["📋 Form Documentation"] --> B["🔍 Analyse Requirements"]
-    C["📖 User Stories"] --> B
-    D["🖼️ Form Images"] --> B
-    B --> E["🤖 Generate Code with AI"]
-    E --> F["🔍 Code Review & Refinement"]
-    F --> G["🧪 Testing & Iteration"]
-    G --> H{"Views Complete?"}
-    H -->|No| I["🔄 Refine Implementation"]
-    H -->|Yes| J["✅ GDS-Compliant Web Interface"]
-    I --> E
+    A["� Refined User Stories"] --> B["🔍 Analyse Requirements"]
+    A --> C["🤖 Generate Code with AI"]
+    B --> C
+    C --> D["🔍 Code Review & Refinement"]
+    D --> E["🧪 Testing & Iteration"]
+    E --> F{"Views Complete?"}
+    F -->|No| G["🔄 Refine Implementation"]
+    F -->|Yes| H["✅ GDS-Compliant Web Interface"]
+    G --> C
 
-    classDef input fill:#ffebee,stroke:#c62828,stroke-width:2px
+    classDef input fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
     classDef process fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
     classDef ai fill:#fff3e0,stroke:#f57c00,stroke-width:2px
     classDef review fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
     classDef decision fill:#ffeb3b,stroke:#f57f17,stroke-width:2px
     classDef output fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
 
-    class A,C,D input
-    class B,F,G process
-    class E,I ai
-    class H decision
-    class J output
+    class A input
+    class B,D,E process
+    class C,G ai
+    class F decision
+    class H output
 </pre>
 
 ## Prerequisites
 
-- Completed form documentation from the previous step
-- User stories generated following GDS standards
-- Screenshots or detailed descriptions of legacy forms
+- Refined user stories from the previous step (which already incorporate form documentation and visual requirements)
 - AI tool access for code generation
 - Development environment set up for your chosen framework
 - Understanding of GDS Design System principles
@@ -46,20 +43,19 @@ flowchart TD
 
 Before beginning development, ensure you have:
 
-1. **Form documentation** with complete component inventories
-2. **User stories** that detail all required functionality
-3. **Visual references** (screenshots) of the original forms
-4. **Business logic understanding** for any complex interactions
+1. **Refined user stories** with detailed technical specifications and acceptance criteria
+2. **Component requirements** clearly defined within the user stories
+3. **Business logic understanding** documented in the acceptance criteria
 
 ### 2. Use AI Tools for Code Generation
 
 Leverage AI tools to generate initial code while ensuring quality and compliance:
 
 #### Using the Build Views Prompt
-1. **Reference your form documentation** and user stories in your AI tool
+1. **Reference your refined user stories** which contain all form documentation and visual requirements
 2. **Use the Build Views in GDS Style prompt** from our prompt library as guidance
-3. **Provide clear context** about the specific form you're implementing
-4. **Include screenshots** of the original form for visual reference
+3. **Provide clear context** about the specific form you're implementing from the user story details
+
 
 The [Build Views in GDS Style prompt](../../../appendix/prompt-library/general/build-views-in-gds-style) ensures that generated code:
 - Follows GDS Design System patterns
@@ -70,7 +66,7 @@ The [Build Views in GDS Style prompt](../../../appendix/prompt-library/general/b
 
 #### Key Implementation Guidelines
 When using AI tools, ensure the generated code:
-- **Only implements visible elements** from your screenshots
+- **Avoid using the screenshots as direct input for generating the webpages** as this will limit design and layout of the new pages
 - **Uses semantic HTML** with proper form structure
 - **Includes appropriate labels and hints** for all form fields
 - **Implements GDS validation patterns** for error handling
