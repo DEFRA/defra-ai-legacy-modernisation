@@ -1,6 +1,6 @@
 # OpenAPI Generation
 
-This prompt can be used to generate a comprehensive OpenAPI 3.1.1 specification document based on user stories and system requirements identified during the discovery-analysis phase.
+This prompt can be used to generate a OpenAPI 3.1.1 specification document based on user stories and system requirements identified during the discovery-analysis phase.
 
 ```
 # Context
@@ -12,7 +12,7 @@ Create a comprehensive OpenAPI 3.1.1 specification document by analyzing user st
 ### 1. User Story and Requirement Analysis
 
 - **Scope**: Review all user stories and system requirements identified during the discovery-analysis phase
-- **Location**: Analyze documentation and artifacts generated in the discovery-analysis phase, including:
+- **Location**: Analyse documentation and artifacts generated in the discovery-analysis phase, including:
   - Functional requirements
   - Non-functional requirements
   - Any additional user story modules
@@ -108,7 +108,7 @@ servers:
 ## Implementation Process
 
 ### Phase 1: Discovery and Analysis
-1. **Requirement Discovery**: Systematically analyze all user stories and requirements
+1. **Requirement Discovery**: Systematically analyse all user stories and requirements
 2. **Handler Analysis**: Review all functional and non-functional requirements to understand request/response patterns
 3. **Schema Extraction**: Extract data models from requirements and validation schemas
 4. **Error Mapping**: Document all error scenarios and HTTP status codes

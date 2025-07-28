@@ -57,20 +57,22 @@ Fill documentation gaps and improve existing documentation quality to support AI
 - **Interview SMEs**: Conduct interviews to gather insights and context
 - **Export hard-to-reach code**: For example, extract VBA or SQL queries from databases or spreadsheets
 - **Use AI to analyse annotated screenshots**: Generate markdown files with detailed descriptions of the screenshots
-- **Use AI to analyze code**: Generate documentation from source code
+- **Use AI to analyse code**: Generate documentation from source code
 - **Create process diagrams**: Convert text descriptions to flowcharts
 
 Focus on business functionality over technical implementation details and use consistent terminology while validating all documentation with SMEs.
 
 ### 4. Test AI Understanding
 
-Validate that AI tools correctly understand your documented system before proceeding. Follow this process:
+Validate that AI tools correctly understand your system documentation before proceeding. Follow this process:
 - Submit test prompts to AI tools with your documentation
 - Review AI responses with SMEs for accuracy
 - Identify areas where AI misunderstood or missed important details
 - Refine documentation to address gaps and provide more context
 - Break complex concepts into simpler components if needed
 - Repeat testing until you are confident AI demonstrates accurate understanding
+
+We recommend asking your AI tool business specific questions that either you or SME know the answer to. This could be as simple as asking it to explain business jargon all the way to a complex business process.
 
 ## Common Challenges and Solutions
 The documentation gathering process can be complex and you may encounter several challenges. Here are some common challenges and suggested solutions:

@@ -2,15 +2,17 @@
 
 This prompt can be used to suggest how a business entity or domain entity from an existing system could be incorporated into a MongoDB schema.
 
+Replace `<business_entity>` with the name of the entity you want to add to the MongoDB schema.
+
 ```
-I need to include the `<business_entity>` from an existing system in a new MongoDB schema. You can use the following:
+The `<business_entity>` entity from the existing system needs to be added to the MongoDB schema. You have been provided with the following:
 - #file:documentation - System documentation to provide domain / business entity context
-- #file:db.changelog.xml - Liquibase changelog for SQL context (if available)
+- #file:db.changelog.xml - Liquibase changelog for SQL context
 - #file:mongo-erd.md - Contains the current Mongo schema Mermaid ERD. Create this if it does not exist.
 - #file:stories - Contains the user stories that will the system will be built around
 
-# ANALYSIS PHASE
-1. Analyze the available documentation and changelog to identify the structure, relationships, and business context of the `<business_entity>`.
+# Analysis Phase
+1. Analyse the available documentation and changelog to identify the structure, relationships, and business context of the `<business_entity>`.
 2. Identify:
   - All relevant data fields and attributes
   - Relationships with other entities

@@ -30,15 +30,9 @@ You should use the following template to structure your user stories and
 
 [Add additional acceptance criteria as needed, but keep the ticket scope manageable]
 
-## Technical Notes
+## Notes (optional)
 
-**Are there any technical considerations for this ticket?**
-
-[Add any relevant technical details, architecture decisions, or implementation notes]
-
-**Dependencies**
-
-[List any dependencies on other tickets, external systems, or prerequisite work]
+[Clarify any additional context, dependencies, or considerations for this ticket - Keep to a minimum to avoid scope creep and leave empty if not needed]
 
 ## Definition of Done
 
