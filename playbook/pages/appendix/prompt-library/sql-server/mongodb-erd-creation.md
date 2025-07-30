@@ -5,6 +5,7 @@ This prompt can be used to suggest how a business entity or domain entity from a
 Replace `<business_entity>` with the name of the entity you want to add to the MongoDB schema.
 
 ```
+# Context
 The `<business_entity>` entity from the existing system needs to be added to the MongoDB schema. You have been provided with the following:
 - #file:documentation - System documentation to provide domain / business entity context
 - #file:db.changelog.xml - Liquibase changelog for SQL context

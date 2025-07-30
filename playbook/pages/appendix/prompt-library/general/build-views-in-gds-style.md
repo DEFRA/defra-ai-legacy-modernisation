@@ -1,9 +1,9 @@
 # Build Views in GDS Style
 
-**Prompt:**
+This prompt is designed to build frontend views using the GDS (Government Digital Service) design system based on referenced user stories.
 
 ```
-# CONTEXT
+# Context
 
 You are tasked with modernising a legacy system. Provided with a user story from the legacy system, your goal is to create a frontend interface that accurately reflects the design and functionality required to satisfy acceptance criteria in the story.
 

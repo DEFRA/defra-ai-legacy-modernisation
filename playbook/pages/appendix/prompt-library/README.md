@@ -6,7 +6,6 @@ This library provides a selection of prompts used by authors. These examples ser
 ### MS Access
 
 - [SSMA SQL Refactor](./ms-access/ssma-sql-refactor)
-- [Access Form User Stories](./ms-access/access-form-user-stories)
 
 ### SQL Server
 

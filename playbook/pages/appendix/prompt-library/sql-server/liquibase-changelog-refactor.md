@@ -3,6 +3,7 @@
 This prompt can be used to generate and refactor Liquibase changelogs that have been automatically generated from a database.
 
 ```
+# Context
 I want to refactor #file:db.changelog.xml. Your task is to follow the below steps to analyse it and refactor it according to the specified rules.
 
 You are allowed to create / run any python scripts or terminal commands to assist in the analysis and refactoring process.

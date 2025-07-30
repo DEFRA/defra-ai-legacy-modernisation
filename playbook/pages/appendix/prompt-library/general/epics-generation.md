@@ -2,8 +2,6 @@
 
 This prompt can be used to generate epics for a legacy system modernisation project based on existing system documentation. The epics will guide the redevelopment of the system and creation of user stories to implement the required functionality.
 
-**Prompt:**
-
 ```
 # Context
 You are a business analyst working in a legacy system modernisation project within UK Government. You have been tasked with producing a set of epics that will be used to guide the redevelopment of a legacy software system.
