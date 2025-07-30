@@ -1,12 +1,10 @@
 # Build GDS-Compliant Views
 
-## Overview
-
-After documenting forms and creating user stories, the next step is to build modern, accessible user interfaces following the GDS (GOV.UK) Design System. This process transforms legacy MS Access forms into web-based interfaces that maintain functionality while improving usability, accessibility, and design consistency.
+Building GDS-compliant views transforms refined user stories into modern, accessible web interfaces following the GOV.UK Design System. This process converts legacy MS Access forms into responsive, user-friendly interfaces while maintaining functionality and improving accessibility.
 
 <pre class="mermaid">
 flowchart TD
-    A["� Refined User Stories"] --> B["🔍 Analyse Requirements"]
+    A["📝 Refined User Stories"] --> B["🔍 Analyse Requirements"]
     A --> C["🤖 Generate Code with AI"]
     B --> C
     C --> D["🔍 Code Review & Refinement"]
@@ -32,97 +30,48 @@ flowchart TD
 
 ## Prerequisites
 
-- Refined user stories from the previous step (which already incorporate form documentation and visual requirements)
+- Refined user stories from the previous step with detailed technical specifications
 - AI tool access for code generation
 - Development environment set up for your chosen framework
 - Understanding of GDS Design System principles
 
-## Building Process
+## Key Activities
 
-### 1. Prepare Your Materials
+### 1. Generate Initial Code with AI
+Use AI tools to create GDS-compliant interfaces from refined user stories:
+- **Use the [Build Views in GDS Style prompt](../../../appendix/prompt-library/general/build-views-in-gds-style)**: Ensure consistent implementation
+- **Reference user stories**: Use form documentation and requirements as context
+- **Avoid using screenshots**: Prevent design limitations by not using direct image input
+- **Ensure semantic HTML**: Implement proper form structure and GDS CSS classes
 
-Before beginning development, ensure you have:
+### 2. Review and Refine Implementation
+Analyze generated code against GDS standards and modernization goals:
+- **Assess GDS compliance**: Compare against design system patterns and components
+- **Evaluate user flow**: Check for logical navigation and task completion
+- **Identify gaps**: Find differences between AI output and modern web standards
+- **Refine prompts**: Request specific improvements based on analysis
+- **Update component specifications**: Better map legacy components to GDS equivalents
 
-1. **Refined user stories** with detailed technical specifications and acceptance criteria
-2. **Component requirements** clearly defined within the user stories
-3. **Business logic understanding** documented in the acceptance criteria
+### 3. Test and Iterate
+Conduct comprehensive testing to ensure quality and accessibility:
+- **Accessibility testing**: Test screen reader, keyboard navigation, color contrast
+- **Functional testing**: Compare with legacy system functionality
+- **User acceptance testing**: Validate workflows and gather feedback
+- **Technical validation**: Check HTML semantics, responsive behavior, GDS pattern compliance
 
-### 2. Use AI Tools for Code Generation
+## Common Challenges and Solutions
+- **Generated Code Doesn't Meet GDS Standards**: Use specific GDS Design System references in prompts. Iteratively refine based on component library patterns.
+- **Accessibility Issues**: Include detailed accessibility requirements in user stories. Test with screen readers and keyboard navigation.
 
-Leverage AI tools to generate initial code while ensuring quality and compliance:
+## Success Criteria
 
-#### Using the Build Views Prompt
-1. **Reference your refined user stories** which contain all form documentation and visual requirements
-2. **Use the Build Views in GDS Style prompt** from our prompt library as guidance
-3. **Provide clear context** about the specific form you're implementing from the user story details
-
-
-The [Build Views in GDS Style prompt](../../../appendix/prompt-library/general/build-views-in-gds-style) ensures that generated code:
-- Follows GDS Design System patterns
-- Implements proper semantic HTML
-- Includes appropriate ARIA labels and accessibility features
-- Uses correct validation and error handling structures
-- Maintains responsive design principles
-
-#### Key Implementation Guidelines
-When using AI tools, ensure the generated code:
-- **Avoid using the screenshots as direct input for generating the webpages** as this will limit design and layout of the new pages
-- **Uses semantic HTML** with proper form structure
-- **Includes appropriate labels and hints** for all form fields
-- **Implements GDS validation patterns** for error handling
-- **Supports keyboard navigation** throughout the interface
-- **Uses GDS CSS classes** and component patterns
-
-### 3. Code Review, Refinement, and Analysis
-
-After generating initial code, review the first iteration of webpages and use your AI tool to refine the implementation based on your vision for GDS compliance and user flow:
-
-#### Developer Analysis and Vision Alignment
-- **Review the generated webpage** against your expectations for modern web standards
-- **Assess GDS compliance** by comparing against design system patterns and components
-- **Evaluate user flow** to ensure logical navigation and task completion
-- **Identify gaps** between the AI-generated output and your vision for the modernised interface
-- **Document specific refinements** needed to better align with GDS principles
-
-#### AI-Assisted Component Refinement
-- **Refine your prompts** based on your analysis of the initial output to request specific improvements
-- **Update component specifications** in your prompts to map legacy components to more appropriate GDS Design System equivalents
-- **Enhance prompt instructions** for complex interactions that require better handling for modern web standards
-- **Improve responsive design prompts** for optimal display across different screen sizes
-
-#### AI-Assisted Accessibility Enhancement
-- **Refine accessibility prompts** based on your review of semantic structure to improve screen reader compatibility
-- **Update navigation instructions** in prompts to enhance keyboard navigation paths and focus management for better usability
-- **Enhance error handling prompts** to refine validation messaging that follows GDS patterns
-- **Improve visual accessibility prompts** including high contrast and clear visual hierarchy requirements
-
-#### Technical Review
-- **Validate HTML semantics** and accessibility compliance improvements
-- **Test keyboard navigation** and screen reader compatibility enhancements
-- **Verify GDS Design System** pattern implementation accuracy
-- **Check responsive behaviour** across device sizes
-
-#### Functional Review
-- **Compare with original form** functionality to ensure feature parity
-- **Test all user interactions** documented in user stories
-- **Validate business logic** implementation in the refined interface
-- **Ensure error handling** meets modernised requirements
-
-### 4. Testing and Iteration
-
-Conduct comprehensive testing:
-
-#### Accessibility Testing
-- **Screen reader testing** with tools like NVDA or VoiceOver
-- **Keyboard navigation testing** without mouse interaction
-- **Colour contrast validation** using accessibility tools
-- **Focus management verification** for complex interactions
-
-#### User Acceptance Testing
-- **Compare functionality** with legacy system
-- **Validate user workflows** end-to-end
-- **Test edge cases** and error scenarios
-- **Gather feedback** from actual users when possible
+GDS view building is complete when:
+- ✅ All interfaces follow GDS Design System patterns and components
+- ✅ Code uses semantic HTML and proper accessibility features
+- ✅ Views support keyboard navigation and screen reader compatibility
+- ✅ Responsive design works across all device sizes
+- ✅ Functionality matches legacy system capabilities
+- ✅ User workflows are tested and validated
 
 ## Next Steps
 

@@ -1,14 +1,14 @@
-# Refine User Stories
+# MS Access User Story Refinement
 
-## Overview
+At this stage, all forms within within the Access applications should already have been documented and user stories generated as part of the discovery phase. As it is difficult to provide AI tools context of an MS Access application compared to other types of applications, this step focuses on refining those user stories to ensure they are ready for AI-assisted implementation.
 
-At this stage, all forms from the legacy system should have been documented and initial user stories created. This step focuses on refining those user stories to ensure they provide clear, actionable requirements when implemented by AI tools.
+This step is optional but highly recommended to ensure the user stories are comprehensive and structured for AI tools.
 
 <pre class="mermaid">
 flowchart TD
-    A["📖 Initial User Stories"] --> B["� Review Story Quality"]
+    A["📖 Initial User Stories"] --> B["🔍 Review Story Quality"]
     B --> C["✏️ Refine Requirements"]
-    C --> D["✅ Validate Acceptance Criteria"]
+    C --> D["✅ Validate Criteria"]
     D --> E{"Stories AI-Ready?"}
     E -->|No| F["🔄 Further Refinement"]
     E -->|Yes| G["✅ Refined User Stories"]
@@ -28,102 +28,51 @@ flowchart TD
 </pre>
 
 ## Prerequisites
-
+You should have:
 - Initial user stories generated from form documentation
 - Screenshots and detailed descriptions of each form
 - Understanding of user roles and business processes
 - Access to the [Access Form User Stories prompt](../../../appendix/prompt-library/ms-access/access-form-user-stories)
 
-## Refinement Process
+## Key Activities
 
-### 1. Review Story Quality
+### 1. Review and Enhance User Stories
+Assess each user story for clarity, completeness and technical detail. Ensure stories include:
+- **Clear user roles and goals**: Specific, measurable user objectives
+- **Component specifications**: Exact field types, validation rules, and interactive behaviour
+- **Technical requirements**: GDS Design System usage, accessibility compliance (WCAG 2.1 AA)
+- **Dependencies**: Relationships between fields and integration points
 
-Assess each user story against these criteria:
+### 2. Refine Acceptance Criteria
+Transform vague requirements into specific, testable criteria:
+- **Specific validation rules**: "User can enter alphanumeric text up to 50 characters with real-time validation"
+- **Error handling**: "Form displays specific error messages with focus management for screen readers"
+- **Visual specifications**: Layout details, responsive design, accessibility features
 
-**Clarity Checklist:**
-- Is the user role clearly defined?
-- Is the user goal specific and measurable?
-- Are the acceptance criteria testable?
-- Do the stories include all necessary technical details?
-
-**Completeness Checklist:**
-- Are all form components documented?
-- Are business rules and validation captured?
-- Are accessibility requirements included?
-- Are error scenarios addressed?
-
-### 2. Enhance Technical Detail
-
-For AI implementation success, ensure each story includes:
-
-**Component Specifications:**
-- Exact field types and validation rules
-- Interactive behaviour descriptions
-- Dependency relationships between fields
-- Data binding requirements
-
-**Visual Requirements:**
-- Layout and positioning details
-- Responsive design considerations
-- GDS Design System component usage
-- Accessibility compliance (WCAG 2.1 AA)
-
-### 3. Refine Acceptance Criteria
-
-Transform vague criteria into specific, testable requirements:
-
-**Before:** "User can enter data"
-**After:** "User can enter alphanumeric text up to 50 characters in the 'Project Name' field with real-time validation showing error message if exceeded"
-
-**Before:** "Form validates correctly"
-**After:** "Form displays specific error messages for required fields, email format validation, and date range validation with focus management for screen readers"
-
-### 4. AI Tool Optimization
-
+### 3. Optimize for AI Implementation
 Structure stories for optimal AI tool consumption:
+- **Use consistent terminology**: Structure with clear headings and structured formats
+- **Include high-resolution visual references**: Provide PNG/JPEG images for clarity
+- **Reference GDS patterns**: Link to design system components where applicable
+- **Separate technical specifications**: Keep technical details distinct from user goals
 
-**Use Structured Formats:**
-- Clear headings and bullet points
-- Consistent terminology throughout
-- Technical specifications separated from user goals
-- Visual references properly formatted (PNG/JPEG, high resolution)
+## Common Challenges and Solutions
+- **Vague Requirements**: Use specific examples and detailed acceptance criteria. Include visual references and technical specifications.
+- **Missing Technical Detail**: Ensure all UI components, validation rules, and dependencies are documented. Reference GDS Design System components.
 
-**Include Context:**
-- Reference existing GDS patterns where applicable
-- Link to relevant design system components
-- Specify browser and device support requirements
+## Success Criteria
 
-## Quality Checklist
+User story refinement is complete when:
+- ✅ All stories have clear, testable acceptance criteria
+- ✅ Technical specifications include GDS compliance requirements
+- ✅ UI components and validation rules are fully documented
+- ✅ Dependencies and integration points are identified
+- ✅ Stories are structured for optimal AI tool consumption
+- ✅ Accessibility requirements are specific and testable
 
-Before proceeding to implementation, verify each user story meets these standards:
+## Next Steps
 
-**Technical Readiness:**
-- [ ] All UI components are specified with exact requirements
-- [ ] Business logic and validation rules are clearly defined
-- [ ] Dependencies between fields and forms are documented
-- [ ] Error handling scenarios are covered
-
-**AI Implementation Ready:**
-- [ ] Stories use consistent, technical language
-- [ ] Visual references are high-resolution images (PNG/JPEG)
-- [ ] GDS Design System components are referenced where applicable
-- [ ] Accessibility requirements are specific and testable
-
-**Completeness:**
-- [ ] All user journeys through the form are covered
-- [ ] Edge cases and error scenarios are addressed
-- [ ] Integration points with other systems are defined
-- [ ] Performance and usability requirements are specified
-
-## Output and Next Steps
-
-By the end of this refinement process, you should have:
-- **AI-ready user stories** with specific, testable acceptance criteria
-- **Enhanced technical specifications** for all form components
-- **Clear accessibility requirements** aligned with GDS standards
-- **Structured documentation** optimized for AI tool consumption
-
-These refined user stories will serve as the foundation for building modern, accessible user interfaces using AI development tools.
+Now that the user stories have been refined, you can now use these stories to build GDS-compliant views using AI development tools.
 
 ---
 
