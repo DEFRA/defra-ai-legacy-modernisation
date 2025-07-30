@@ -42,7 +42,7 @@ In order to test the schema is suitable for the data, you will need to migrate t
 
 - Open SQL Server Migration Assistant (SSMA).
 - Connect to the SQL Server instance and the Access database.
-- Start the data migration process by clicking on the "Migrate Data" button.
+- Start the data migration process by clicking on the **Migrate Data** button.
 - Ensure that the data is migrated successfully without any errors.
 
 ---
