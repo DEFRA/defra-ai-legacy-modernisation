@@ -3,9 +3,13 @@
 This prompt can be used to refactor SQL generated from SQL Server Migration Assistant (SSMA).
 
 ```
-I want to refactor the #file:script.sql SQL script. Your task is to follow the below steps to analyze it and refactor it according to the specified rules.
+# Context
 
-# ANALYSIS PHASE
+I want to refactor the #file:script.sql SQL script. Your task is to follow the below steps to analyse it and refactor it according to the specified rules.
+
+You are allowed to create / run any python scripts or terminal commands to assist in the analysis and refactoring process.
+
+# Analysis Phase
 
 Identify:
   1. Any warning comments
@@ -13,7 +17,7 @@ Identify:
   3. Foreign key creation
   4. References to these foreign keys in 'MS_SSMA_SOURCE' metadata
 
-# REFACTOR PHASE
+# Refactor Phase
 
 Refactor any SQL matching the following rules:
   - Create a new script file with the same name as the original but with a `.refactored.sql` extension
@@ -23,10 +27,14 @@ Refactor any SQL matching the following rules:
   - Ensure any updated foreign keys are updated elsewhere in the script
   - Identify which warnings flagged by the migration assistant need addressed
 
-# SUMMARISE PHASE
+# Summary Phase
 Create a summary file in markdown format with the following sections:
   - Summary of changes made
   - List of warnings addressed
   - List of foreign keys renamed
   - Any other relevant notes
 ```
+
+---
+
+[← Previous: Prompt Library](../.)

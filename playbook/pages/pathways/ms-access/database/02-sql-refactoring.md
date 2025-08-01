@@ -1,7 +1,5 @@
 # SQL Refactoring
 
-## Overview
-
 In the previous step, the SQL Server Migration Assistant (SSMA) has migrated the Access database schema to SQL Server and you have outputted the generated SQL script. Although these scripts are functional, they are often difficult to read and require refactoring.
 
 This step focuses on using AI tools to speed up the refactoring process, allowing it's validity to be verified and optimised for performance and maintainability.
@@ -44,9 +42,9 @@ In order to test the schema is suitable for the data, you will need to migrate t
 
 - Open SQL Server Migration Assistant (SSMA).
 - Connect to the SQL Server instance and the Access database.
-- Start the data migration process by clicking on the "Migrate Data" button.
+- Start the data migration process by clicking on the **Migrate Data** button.
 - Ensure that the data is migrated successfully without any errors.
 
 ---
 
-[← Previous: SSMA Database Migration](01-ssma-migration) | [(COMPLETE) Next: SQL Server Pathway →](../../sql-server/)
+[← Previous: SSMA Migration](01-ssma-migration) | [Next: SQL Server Pathway →](../../sql-server)
